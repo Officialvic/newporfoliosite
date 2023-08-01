@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TAILWIND CDN(CONTENT DELIVERY NETWORK) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              container: {
+                padding: '4rem',
+              },
+              fontSize: {
+                sm: '0.8rem',
+                base: '1rem',
+                xl: '1.25rem',
+                '2xl': '1.563rem',
+                '3xl': '1.953rem',
+                '4xl': '2.441rem',
+                '5xl': '3.052rem',              
+              },
+              fontFamily: {
+                'sans': ['Montserrat'],
+              },
+              colors: {
+                primary: '#0D1282',
+                secondary: '#5271FF',
+                light: '#ffffff',
+                action: '#F0DE36',
+                texture: '#D71313',
+                gray: '#EEEDED',
+              },
+            }
+          }  
+      }
+    </script>
+    <title>Vinode</title>
+</head>
+<body class="scroll-smooth transition-transform ease-in duration-300">
+    <!-- Header Section Containing Nav Bar and Showcase -->
+    <header class="h-[750px]  bg-[url('img/Showcase.png')] bg-cover bg-no-repeat bg-center">
+        <div class="container mx-auto" >
+            <!-- Navigation Bar -->
+            <nav>
+                <div class="pt-6 flex flex-wrap items-center justify-between">
+                    <h1 class="text-2xl font-semibold">VINODE</h1>
+                    <ul class="flex flex-wrap sm:text-white md:text-white text-black">
+                        <li class="p-3 hover:text-gray"><a href="index.html">Home</a></li>
+                        <li class="p-3 hover:text-gray"><a href="meet.html">Meet Me</a></li>
+                        <li class="p-3 hover:text-gray"><a href="services.html">My Services</a></li>
+                        <li class="p-3 hover:text-gray"><a href="skills.html">My Skills</a></li>
+                        <li class="p-3 hover:text-gray"><a href="works.html">Works</a></li>
+                        <li class="p-3 hover:text-gray"><a href="blog.html">Viblog</a></li>
+                        <li class="p-3 bg-light text-black hover:bg-gray hover:scale-105 animate-pulse"><a href="#contact">Reach Out</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Showcase Hero -->
+            <div class=" w-[50%] mt-48 max-[640px]:mt-20">
+                <h2 class="font-sans text-4xl max-[640px]:text-2xl font-bold">Get the most out of your budget</h2>
+                <p class="mt-8 mb-8">My strongest passion is to create a management system to enhance and increase your business productivity. This is what I know to do best.</p>
+                <button class="hover:scale-105 animate-pulse"><a class="bg-gradient-to-r from-primary to-secondary p-4 text-white" href="#contact">Reach Out</a></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main body -->
+    <main>
+      <!-- Meet me section -->
+      <section class="bg-gray pt-6 pb-6">
+          <div class="mt-20 max-[640px]:flex-col flex justify-around items-center container mx-auto">
+            <img src="img/victor.jpg" alt="about image" class="w-[50%] rounded-full hover:animate-bounce">
+            <div class="p-10">
+              <h2 class="text-4xl font-bold mb-8"><span class="text-primary">Meet</span> Me</h2>
+              <p class="mb-8 text-justify">Hello there! My name is Adeoye Victor, and I'm a passionate tech enthusiast who thrives on solving
+                 problems in innovative ways. As a team player, I enjoy collaborating with others to analyze and solve problems dynamically and strategically.
+
+                <br><br>In my role as a Web Designer with BRATIM Group, I have had the opportunity to exercise my technical and professional skills to redesign the company's website. By improving its user interaction and experience, we were able to increase their business productivity. With my background in civil engineering and a strong passion for digital literacy advocacy, I have worked with various NGOs to execute several MIL and Digital Literacy projects in both governmental and private sectors.
+                
+                <br><br>Currently, I am a fellow in TIIDELab, where I am undergoing intensive capacity building training in software engineering. I am always eager to learn, research, and solve problems innovatively, and I believe that my diverse range of skills and expertise can help individuals and businesses achieve their goals through the use of technology.</p>
+              <a class="bg-gradient-to-r from-primary to-secondary p-4 text-white animate-pulse" href="#contact">Reach Out</a>
+          </div>
+        </div>
+      </section>
+      <!-- Services Section -->
+      <section>
+        <div class="container mt-40">
+          <h2 class="text-center text-4xl font-bold mb-8">My <span class="text-primary">Services</span></h2>
+          <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-4">
+            <div class="bg-primary">
+              <img src="img/service1.jpg" alt="">
+              <div class="p-4">
+                <p class="text-light mb-6 font-light">Web Design and Front-End Development</p>
+                <a class="bg-texture p-2 text-white" href="#contact">Reach Out</a>
+              </div>
+            </div>
+            <div class="bg-primary">
+              <img src="img/service2.jpg" alt="">
+              <div class="p-4">
+                <p class="text-light mb-6 font-light">Media, Information and Digital Literacy Training</p>
+                <a class="bg-texture p-2 text-white" href="reach.html">Reach Out</a>
+              </div>
+            </div>
+            <div class="bg-primary">
+              <img src="img/service3.jpg" alt="">
+              <div class="p-4">
+                <p class="text-light mb-6 font-light">Structural Analysis, Design and Sustainable Infrastructure Research</p>
+                <a class="bg-texture p-2 text-white mx-auto" href="reach.html">Reach Out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skillsect section -->
+      <section>
+        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 container mt-40">
+          <div>
+            <h2 class="text-4xl font-bold mt-8 mb-8 text-center"><span class="text-primary">My</span> Skillset</h2>
+            <img class="motion-safe:animate-ping" src="icon/blob1.png" alt="">
+          </div>
+          <div class="border-l-2 border-primary border-dashed">
+            <div class="p-20">
+              <div class="flex max-[640px]:flex-col items-center m-8">
+                <h3 class="mr-10 text-base mx-auto w-[200px]">HTML</h3>
+                <div class="flex justify-between w-[200px] pr-4 pl-4">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/half-star.svg" alt="" class="w-6">
+                  <img src="icon/no-star.svg" alt="" class="w-6">
+                </div>
+              </div>
+              <div class="flex max-[640px]:flex-col items-center m-8">
+                <h3 class="mr-10 text-base mx-auto w-[200px]">CSS</h3>
+                <div class="flex justify-between w-[200px] pr-4 pl-4">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/half-star.svg" alt="" class="w-6">
+                  <img src="icon/no-star.svg" alt="" class="w-6">
+                </div>
+              </div>
+              <div class="flex max-[640px]:flex-col items-center m-8">
+                <h3 class="mr-10 text-base mx-auto w-[200px]">Bootstrap</h3>
+                <div class="flex justify-between w-[200px] pr-4 pl-4">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/half-star.svg" alt="" class="w-6">
+                  <img src="icon/no-star.svg" alt="" class="w-6">
+                  <img src="icon/no-star.svg" alt="" class="w-6">
+                </div>
+              </div>
+              <div class="flex max-[640px]:flex-col items-center m-8">
+                <h3 class="mr-10 text-base mx-auto w-[200px]">Tailwind</h3>
+                <div class="flex justify-between w-[200px] pr-4 pl-4">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/half-star.svg" alt="" class="w-6">
+                  <img src="icon/no-star.svg" alt="" class="w-6">
+                  <img src="icon/no-star.svg" alt="" class="w-6">
+                  <img src="icon/no-star.svg" alt="" class="w-6">
+                </div>
+              </div>
+              <div class="flex max-[640px]:flex-col items-center m-8">
+                <h3 class="mr-10 text-base mx-auto w-[200px]">Javascript</h3>
+                <div class="flex justify-between w-[200px] pr-4 pl-4">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/no-star.svg" alt="" class="w-6">
+                  <img src="icon/no-star.svg" alt="" class="w-6">
+                  <img src="icon/no-star.svg" alt="" class="w-6">
+                </div>
+              </div>
+              <div class="flex max-[640px]:flex-col items-center m-8">
+                <h3 class="mr-10 text-base mx-auto w-[200px]">WordPress</h3>
+                <div class="flex justify-between w-[200px] pr-4 pl-4">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/half-star.svg" alt="" class="w-6">
+                  <img src="icon/no-star.svg" alt="" class="w-6">
+                </div>
+              </div>
+              <div class="flex max-[640px]:flex-col items-center m-8">
+                <h3 class="mr-10 text-base mx-auto w-[200px]">Structural Design</h3>
+                <div class="flex justify-between w-[200px] pr-4 pl-4">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/half-star.svg" alt="" class="w-6">
+                  <img src="icon/no-star.svg" alt="" class="w-6">
+                </div>
+              </div>
+              <div class="flex max-[640px]:flex-col items-center m-8">
+                <h3 class="mr-10 text-base shrink mx-auto w-[200px]">Technical Writing</h3>
+                <div class="flex justify-between w-[200px] pr-4 pl-4">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/half-star.svg" alt="" class="w-6">
+                  <img src="icon/no-star.svg" alt="" class="w-6">
+                </div>
+              </div>
+              <div class="flex max-[640px]:flex-col items-center m-8">
+                <h3 class="mr-10 text-base shrink mx-auto w-[200px]">Coaching</h3>
+                <div class="flex justify-between w-[200px] pr-4 pl-4">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/full-star.svg" alt="" class="w-6">
+                  <img src="icon/half-star.svg" alt="" class="w-6">
+                  <img src="icon/no-star.svg" alt="" class="w-6">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Works section -->
+      <section>
+        <div class="container mt-40 ">
+          <h2 class="text-center text-4xl font-bold mb-8">My <span class="text-primary">Works</span></h2>
+          <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-4">
+            <div class="bg-primary">
+              <img src="img/victor.jpg" alt="">
+              <div class="p-4">
+                <p class="text-light mb-6 font-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, ipsum.</p>
+                <a class="bg-action p-2 text-white" href="reach.html">Check it here</a>
+              </div>
+            </div>
+            <div class="bg-primary">
+              <img src="img/victor.jpg" alt="">
+              <div class="p-4">
+                <p class="text-light mb-6 font-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, ipsum.</p>
+                <a class="bg-action p-2 text-white" href="reach.html">Check it here</a>
+              </div>
+            </div>
+            <div class="bg-primary">
+              <img src="img/victor.jpg" alt="">
+              <div class="p-4">
+                <p class="text-light mb-6 font-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, ipsum.</p>
+                <a class="bg-action p-2 text-white mx-auto" href="reach.html">Check it here</a>
+              </div>
+            </div>
+            <div class="bg-primary">
+              <img src="img/victor.jpg" alt="">
+              <div class="p-4">
+                <p class="text-light mb-6 font-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, ipsum.</p>
+                <a class="bg-action p-2 text-white" href="reach.html">Check it here</a>
+              </div>
+            </div>
+            <div class="bg-primary">
+              <img src="img/victor.jpg" alt="">
+              <div class="p-4">
+                <p class="text-light mb-6 font-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, ipsum.</p>
+                <a class="bg-action p-2 text-white" href="reach.html">Check it here</a>
+              </div>
+            </div>
+            <div class="bg-primary">
+              <img src="img/victor.jpg" alt="">
+              <div class="p-4">
+                <p class="text-light mb-6 font-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, ipsum.</p>
+                <a class="bg-action p-2 text-white mx-auto" href="reach.html">Check it here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Viblog Section -->
+      <section class="mt-20">
+        <h2 class="text-4xl font-bold mt-8 mb-8 text-center"><span class="text-primary">Vi</span>blog</h2>
+        <div class="container grid grid-cols-3 max-[640px]:grid-cols-1 gap-4">
+          <div class="grid grid-cols-2 col-span-2 bg-gray">
+            <img src="img/victor.jpg" alt="" class="p-4">
+            <div class="ml-8">
+              <button class="bg-texture p-1 rounded-2xl text-white text-[0.5rem] uppercase mt-8 transition-transform ease-in-out delay-150 hover:tranlate-y-1 duration-300 hover:scale-110 duration-300">Technology</button>
+              <span><h2 class="font-bold text-xl mb-6">Technology Trend</h2></span>
+              <p class="mb-4 text-black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, id?</p>
+              <a class="bg-gradient-to-r from-primary to-secondary p-2 text-white mx-auto" href="reach.html">Learn more</a>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 bg-primary">
+            <div class="ml-8">
+              <button class="bg-texture p-1 rounded-2xl text-white text-[0.5rem] uppercase mt-4">Technology</button>
+              <span><h2 class="font-bold text-xl mb-6">Technology Trend</h2></span>
+              <p class="mb-4 text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, id?</p>
+              <a class="bg-gradient-to-r from-primary to-secondary p-2 text-white mx-auto" href="reach.html">Learn more</a>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 bg-gray p-8">
+            <img src="img/victor.jpg" alt="" class="p-4">
+            <div class="ml-8">
+              <button class="bg-texture p-1 rounded-2xl text-white text-[0.5rem] uppercase mt-4">Technology</button>
+              <span><h2 class="font-bold text-xl mb-6">Technology Trend</h2></span>
+              <p class="mb-4 text-black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, id?</p>
+              <a class="bg-gradient-to-r from-primary to-secondary p-2 text-white mx-auto" href="reach.html">Learn more</a>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 bg-primary">
+            <div class="ml-8">
+              <button class="bg-texture p-1 rounded-2xl text-white text-[0.5rem] uppercase mt-4">Technology</button>
+              <span><h2 class="font-bold text-xl mb-6">Technology Trend</h2></span>
+              <p class="mb-4 text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, id?</p>
+              <a class="bg-gradient-to-r from-primary to-secondary p-2 text-white mx-auto" href="reach.html">Learn more</a>
+            </div>
+            <img src="img/victor.jpg" alt="" class="p-4">
+          </div>
+          <div class="grid grid-cols-1 bg-grey">
+            <img src="img/victor.jpg" alt="" class="p-4">
+            <div class="ml-8">
+              <button class="bg-texture p-1 rounded-2xl text-white text-[0.5rem] uppercase mt-4">Technology</button>
+              <span></span>
+              <p class="mb-4 text-black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, id?</p>
+              <a class="bg-gradient-to-r from-primary to-secondary p-2 text-white mx-auto" href="reach.html">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section id="contact" class="bg-[url('img/contact.png')] bg-cover bg-no-repeat bg-center">
+        <div class="p-4">
+          <h2 class="text-4xl font-bold mt-8 mb-8 text-center"><span class="text-primary">I am</span> here</h2>
+          <p class="text-center">I am eager to hear from you.</p>
+          <form action="" class="container mx-auto">
+            <div class="m-8 w-[50%] mx-auto">
+              <label class="text-base" for="firstName">First Name</label><br>
+              <input class="bg-gray rounded-xl w-[100%] text-sm p-2" type="text" name="firstName" id="firstName" placeholder="Enter your first name">
+            </div>
+            <div class="m-8 w-[50%] mx-auto">
+              <label class="text-base" for="lastName">Last Name</label><br>
+              <input class="bg-gray rounded-xl w-[100%] text-sm p-2" type="text" name="lastName" id="lastName" placeholder="Enter your Last name">
+            </div>
+            <div class="m-8 w-[50%] mx-auto">
+              <label for="email">Email</label><br>
+              <input class="bg-gray rounded-xl w-[100%] text-sm p-2" type="email" name="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="m-8 w-[50%] mx-auto">
+              <label for="message">Message</label><br>
+              <textarea class="bg-gray rounded-xl w-[100%] text-sm mb-4 p-2" name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+              <a class="bg-gradient-to-r from-primary to-secondary p-2 text-center text-white mx-auto" href="reach.html">Learn more</a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-primary">
+          <nav class="container m-auto">
+            <div class="pt-6 flex flex-wrap items-center justify-between">
+                <h1 class="text-2xl font-semibold text-gray">VINODE</h1>
+                <ul class="flex flex-wrap text-white font-light">
+                    <li class="p-3"><a href="index.html">Home</a></li>
+                    <li class="p-3"><a href="meet.html">Meet Me</a></li>
+                    <li class="p-3"><a href="services.html">My Services</a></li>
+                    <li class="p-3"><a href="skills.html">My Skills</a></li>
+                    <li class="p-3"><a href="works.html">Works</a></li>
+                    <li class="p-3"><a href="blog.html">Viblog</a></li>
+                    <li class="p-3 bg-action text-black"><a href="reach.html">Reach Out</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p class="font-light text-center mt-20 text-action">+ 2348169921855 | onaopeadeoye@gmail.com | Abuja Nigeria</p>
+        <div>
+          <p class="text-center text-light font-light">&copy;copyright 2023 All Right Reserved</p>
+        </div>
+      </footer>
+    </main>
+</body>
+</html>
