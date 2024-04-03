@@ -8,6 +8,22 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet" />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="icon/apple-touch-icon.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="icon/favicon-32x32.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="icon/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
         <!-- Fontawesome Icon -->
         <script
             src="https://kit.fontawesome.com/fa7c07a049.js"
@@ -57,28 +73,28 @@
                 <nav>
                     <div
                         class="pt-6 flex flex-wrap items-center justify-between">
-                        <h1 class="text-2xl font-semibold">
-                            <a href="#">VINODE</a>
+                        <h1 class="text-2xl font-bold text-primary">
+                            <a href="#">ViNODE</a>
                         </h1>
                         <ul
                             class="text-sm font-medium flex flex-wrap sm:text-white md:text-white text-black">
                             <li class="p-3 hover:text-gray">
-                                <a href="index.html">Home</a>
+                                <a href="#">Home</a>
                             </li>
                             <li class="p-3 hover:text-gray">
-                                <a href="meet.html">Meet Me</a>
+                                <a href="#about">Meet Me</a>
                             </li>
                             <li class="p-3 hover:text-gray">
-                                <a href="services.html">My Services</a>
+                                <a href="#service">My Services</a>
                             </li>
                             <li class="p-3 hover:text-gray">
-                                <a href="skills.html">My Skills</a>
+                                <a href="#skill">My Skills</a>
                             </li>
                             <li class="p-3 hover:text-gray">
-                                <a href="works.html">Works</a>
+                                <a href="#work">Works</a>
                             </li>
                             <li class="p-3 hover:text-gray">
-                                <a href="blog.html">Viblog</a>
+                                <a href="#viblog">Viblog</a>
                             </li>
                             <li class="p-3 hover:text-gray">
                                 <a
@@ -122,7 +138,7 @@
         <!-- Main body -->
         <main>
             <!-- Meet me section -->
-            <section class="bg-gray pt-6 pb-6">
+            <section class="bg-gray pt-6 pb-6" id="about">
                 <div
                     class="mt-20 max-[640px]:flex-col flex justify-around items-center container mx-auto">
                     <img
@@ -177,7 +193,7 @@
                 </div>
             </section>
             <!-- Services Section -->
-            <section>
+            <section id="service">
                 <div class="container mx-auto mt-40">
                     <h2 class="text-center text-4xl font-bold mb-8">
                         My <span class="text-primary">Services</span>
@@ -293,7 +309,7 @@
             </section>
 
             <!-- Skillsect section -->
-            <section>
+            <section id="skill">
                 <div
                     class="grid grid-cols-2 max-[640px]:grid-cols-1 container mx-auto mt-40">
                     <div>
@@ -490,7 +506,7 @@
             </section>
 
             <!-- My Works section -->
-            <section>
+            <section id="work">
                 <div class="container mx-auto mt-40">
                     <h2 class="text-center text-4xl font-bold mb-8">
                         My <span class="text-primary">Works</span>
@@ -845,7 +861,7 @@
             </section>
 
             <!-- Viblog Section -->
-            <section class="mt-20">
+            <section class="my-20" id="viblog">
                 <h2 class="text-4xl font-bold mt-8 mb-8 text-center">
                     <span class="text-primary">Vi</span>blog
                 </h2>
@@ -1088,25 +1104,42 @@
             </section>
 
             <!-- Footer -->
-            <footer class="bg-primary">
+            <footer class="bg-primary" id="footer">
                 <nav class="container m-auto">
                     <div
                         class="pt-6 flex flex-wrap items-center justify-between">
                         <h1 class="text-2xl text-white font-semibold">
-                            <a href="#">VINODE</a>
+                            <a href="#">ViNODE</a>
                         </h1>
                         <ul class="flex flex-wrap text-white font-light">
-                            <li class="p-3"><a href="index.html">Home</a></li>
-                            <li class="p-3"><a href="meet.html">Meet Me</a></li>
-                            <li class="p-3">
-                                <a href="services.html">My Services</a>
+                            <li class="p-3 hover:text-gray">
+                                <a href="#">Home</a>
                             </li>
-                            <li class="p-3">
-                                <a href="skills.html">My Skills</a>
+                            <li class="p-3 hover:text-gray">
+                                <a href="#about">Meet Me</a>
                             </li>
-                            <li class="p-3"><a href="works.html">Works</a></li>
-                            <li class="p-3"><a href="blog.html">Viblog</a></li>
-                            <li class="p-3 bg-action text-black animate-pulse">
+                            <li class="p-3 hover:text-gray">
+                                <a href="#service">My Services</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a href="#skill">My Skills</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a href="#work">Works</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a href="#viblog">Viblog</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a
+                                    href="http://www.youtube.com/@_officialvic"
+                                    target="_blank"
+                                    >ViVlog</a
+                                >
+                            </li>
+
+                            <li
+                                class="p-3 bg-action text-black animate-pulse rounded-full">
                                 <a href="#contact">Reach Out</a>
                             </li>
                         </ul>
