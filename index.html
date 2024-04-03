@@ -1,385 +1,1148 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<!-- Fontawesome Icon -->
-<script src="https://kit.fontawesome.com/fa7c07a049.js" crossorigin="anonymous"></script>
-    <!-- TAILWIND CDN(CONTENT DELIVERY NETWORK) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              container: {
-                padding: '4rem',
-              },
-              fontSize: {
-                sm: '0.8rem',
-                base: '1rem',
-                xl: '1.25rem',
-                '2xl': '1.563rem',
-                '3xl': '1.953rem',
-                '4xl': '2.441rem',
-                '5xl': '3.052rem',              
-              },
-              fontFamily: {
-                sans: ['Montserrat', 'sans-serif'],
-              },
-              colors: {
-                primary: '#0D1282',
-                secondary: '#5271FF',
-                light: '#ffffff',
-                action: '#F0DE36',
-                texture: '#D71313',
-                gray: '#EEEDED',
-              },
-            }
-          }  
-      }
-    </script>
-    <title>Vinode</title>
-</head>
-<body class="scroll-smooth transition-transform ease-in duration-300">
-    <!-- Header Section Containing Nav Bar and Showcase -->
-    <header class="h-[750px]  bg-[url('img/Showcase.png')] bg-cover bg-no-repeat bg-center">
-        <div class="container mx-auto" >
-            <!-- Navigation Bar -->
-            <nav>
-                <div class="pt-6 flex flex-wrap items-center justify-between">
-                    <h1 class="text-2xl font-semibold"><a href="#">VINODE</a></h1>
-                    <ul class="flex flex-wrap sm:text-white md:text-white text-black">
-                        <li class="p-3 hover:text-gray"><a href="index.html">Home</a></li>
-                        <li class="p-3 hover:text-gray"><a href="meet.html">Meet Me</a></li>
-                        <li class="p-3 hover:text-gray"><a href="services.html">My Services</a></li>
-                        <li class="p-3 hover:text-gray"><a href="skills.html">My Skills</a></li>
-                        <li class="p-3 hover:text-gray"><a href="works.html">Works</a></li>
-                        <li class="p-3 hover:text-gray"><a href="blog.html">Viblog</a></li>
-                        <li class="p-3 bg-light text-black hover:bg-gray hover:scale-105 animate-pulse"><a href="#contact">Reach Out</a></li>
-                    </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet" />
+        <!-- Fontawesome Icon -->
+        <script
+            src="https://kit.fontawesome.com/fa7c07a049.js"
+            crossorigin="anonymous"></script>
+        <!-- TAILWIND CDN(CONTENT DELIVERY NETWORK) -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        container: {
+                            padding: "4rem",
+                        },
+                        fontSize: {
+                            sm: "0.8rem",
+                            base: "1rem",
+                            xl: "1.25rem",
+                            "2xl": "1.563rem",
+                            "3xl": "1.953rem",
+                            "4xl": "2.441rem",
+                            "5xl": "3.052rem",
+                        },
+                        fontFamily: {
+                            sans: ["Montserrat", "sans-serif"],
+                        },
+                        colors: {
+                            primary: "#0D1282",
+                            secondary: "#5271FF",
+                            light: "#ffffff",
+                            action: "#F0DE36",
+                            texture: "#D71313",
+                            green: "#00ff00",
+                            gray: "#EEEDED",
+                        },
+                    },
+                },
+            };
+        </script>
+        <title>Vinode</title>
+    </head>
+    <body class="scroll-smooth transition-transform ease-in duration-300">
+        <!-- Header Section Containing Nav Bar and Showcase -->
+        <header
+            class="h-[750px] bg-[url('img/1.jpg')] bg-cover bg-no-repeat bg-center">
+            <div class="container mx-auto">
+                <!-- Navigation Bar -->
+                <nav>
+                    <div
+                        class="pt-6 flex flex-wrap items-center justify-between">
+                        <h1 class="text-2xl font-semibold">
+                            <a href="#">VINODE</a>
+                        </h1>
+                        <ul
+                            class="text-sm font-medium flex flex-wrap sm:text-white md:text-white text-black">
+                            <li class="p-3 hover:text-gray">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a href="meet.html">Meet Me</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a href="services.html">My Services</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a href="skills.html">My Skills</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a href="works.html">Works</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a href="blog.html">Viblog</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a
+                                    href="http://www.youtube.com/@_officialvic"
+                                    target="_blank"
+                                    >ViVlog</a
+                                >
+                            </li>
+                            <li
+                                class="p-3 bg-light text-black hover:bg-gray hover:scale-105 animate-bounce rounded-full">
+                                <a href="#contact">Reach Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Showcase Hero -->
+                <div class="w-[50%] mt-48 max-[640px]:mt-20">
+                    <h2
+                        class="font-sans text-4xl max-[640px]:text-2xl font-bold">
+                        Get the most out of your budget
+                    </h2>
+                    <p class="mt-8 mb-8">
+                        I design, research and teach Sustainable Infrastructure
+                        Engineering(Buildings and other structures),
+                        Civil/Structural Engineering Technology (Computer-Aided
+                        Designs, Building Information Modelling, Computations
+                        and Simulations). I promote Positive Peace, develop
+                        human and communities.
+                    </p>
+                    <button class="hover:scale-105 animate-bounce">
+                        <a
+                            class="bg-gradient-to-r from-primary to-secondary p-4 text-white rounded-full"
+                            href="#contact"
+                            >Reach Out</a
+                        >
+                    </button>
                 </div>
-            </nav>
-            <!-- Showcase Hero -->
-            <div class=" w-[50%] mt-48 max-[640px]:mt-20">
-                <h2 class="font-sans text-4xl max-[640px]:text-2xl font-bold">Get the most out of your budget</h2>
-                <p class="mt-8 mb-8">My strongest passion is to create a management system to enhance and increase your business productivity. This is what I know to do best.</p>
-                <button class="hover:scale-105 animate-pulse"><a class="bg-gradient-to-r from-primary to-secondary p-4 text-white" href="#contact">Reach Out</a></button>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- Main body -->
-    <main>
-      <!-- Meet me section -->
-      <section class="bg-gray pt-6 pb-6">
-          <div class="mt-20 max-[640px]:flex-col flex justify-around items-center container mx-auto">
-            <img src="img/victor.jpg" alt="about image" class="w-[50%] rounded-full hover:animate-bounce">
-            <div class="p-10">
-              <h2 class="text-4xl font-bold mb-8"><span class="text-primary">Meet</span> Me</h2>
-              <p class="mb-8 text-justify">Hello there! My name is Adeoye Victor, and I'm a passionate tech enthusiast who thrives on solving
-                 problems in innovative ways. As a team player, I enjoy collaborating with others to analyze and solve problems dynamically and strategically.
+        <!-- Main body -->
+        <main>
+            <!-- Meet me section -->
+            <section class="bg-gray pt-6 pb-6">
+                <div
+                    class="mt-20 max-[640px]:flex-col flex justify-around items-center container mx-auto">
+                    <img
+                        src="img/victor.jpg"
+                        alt="about image"
+                        class="w-[50%] rounded-full hover:animate-bounce" />
+                    <div class="p-10">
+                        <h2 class="text-4xl font-bold mb-8">
+                            <span class="text-primary">Meet</span> Me
+                        </h2>
+                        <p class="mb-8 text-justify">
+                            I'm Victor O. Adeoye, a civil and structural
+                            engineer with a passion for sustainable
+                            infrastructure and empowering communities. While I
+                            design structures by day, my evenings are dedicated
+                            to using design thinking to craft user-friendly
+                            software and other technological solutions.
 
-                <br><br>In my role as a Web Designer with BRATIM Group, I have had the opportunity to exercise my technical and professional skills to redesign the company's website. By improving its user interaction and experience, we were able to increase their business productivity. With my background in civil engineering and a strong passion for digital literacy advocacy, I have worked with various NGOs to execute several MIL and Digital Literacy projects in both governmental and private sectors.
-                
-                <br><br>Currently, I am a fellow in TIIDELab, where I am undergoing intensive capacity building training in software engineering. I am always eager to learn, research, and solve problems innovatively, and I believe that my diverse range of skills and expertise can help individuals and businesses achieve their goals through the use of technology.</p>
-              <a class="bg-gradient-to-r from-primary to-secondary p-4 text-white animate-pulse" href="#contact">Reach Out</a>
-          </div>
-        </div>
-      </section>
-      <!-- Services Section -->
-      <section>
-        <div class="container mx-auto mt-40">
-          <h2 class="text-center text-4xl font-bold mb-8">My <span class="text-primary">Services</span></h2>
-          <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-4">
-            <div class="bg-primary">
-              <img src="img/service1.jpg" alt="">
-              <div class="p-4">
-                <p class="text-light mb-6 font-light">Web Design and Front-End Development</p>
-                <a class="bg-texture p-2 text-white" href="#contact">Reach Out</a>
-              </div>
-            </div>
-            <div class="bg-primary">
-              <img src="img/service2.jpg" alt="">
-              <div class="p-4">
-                <p class="text-light mb-6 font-light">Media, Information and Digital Literacy Training</p>
-                <a class="bg-texture p-2 text-white" href="reach.html">Reach Out</a>
-              </div>
-            </div>
-            <div class="bg-primary">
-              <img src="img/service3.jpg" alt="">
-              <div class="p-4">
-                <p class="text-light mb-6 font-light">Structural Analysis, Design and Sustainable Infrastructure Research</p>
-                <a class="bg-texture p-2 text-white mx-auto" href="reach.html">Reach Out</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                            <br /><br />Beyond engineering, I'm a firm believer
+                            in the power of technology for social good.
+                            Partnering with the Nigerian Library Association,
+                            I've equipped over 500 professionals and students
+                            with media and digital literacy tools to combat
+                            misinformation and fake news. My dedication extends
+                            to community outreach programs, supporting
+                            internally displaced persons and orphans and
+                            providing not just resources, but also hope.
 
-      <!-- Skillsect section -->
-      <section>
-        <div class="grid grid-cols-2 max-[640px]:grid-cols-1 container mx-auto mt-40">
-          <div>
-            <h2 class="text-4xl font-bold mt-8 mb-8 text-center"><span class="text-primary">My</span> Skillset</h2>
-            <img class="motion-safe:animate-ping" src="icon/blob1.png" alt="">
-          </div>
-          <div class="border-l-2 border-primary border-dashed">
-            <div class="p-20">
-              <div class="flex max-[640px]:flex-col items-center m-8">
-                <h3 class="mr-10 text-base mx-auto w-[200px]">HTML</h3>
-                <div class="flex justify-between w-[200px] pr-4 pl-4">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/half-star.svg" alt="" class="w-6">
-                  <img src="icon/no-star.svg" alt="" class="w-6">
-                </div>
-              </div>
-              <div class="flex max-[640px]:flex-col items-center m-8">
-                <h3 class="mr-10 text-base mx-auto w-[200px]">CSS</h3>
-                <div class="flex justify-between w-[200px] pr-4 pl-4">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/half-star.svg" alt="" class="w-6">
-                  <img src="icon/no-star.svg" alt="" class="w-6">
-                </div>
-              </div>
-              <div class="flex max-[640px]:flex-col items-center m-8">
-                <h3 class="mr-10 text-base mx-auto w-[200px]">Bootstrap</h3>
-                <div class="flex justify-between w-[200px] pr-4 pl-4">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/half-star.svg" alt="" class="w-6">
-                  <img src="icon/no-star.svg" alt="" class="w-6">
-                  <img src="icon/no-star.svg" alt="" class="w-6">
-                </div>
-              </div>
-              <div class="flex max-[640px]:flex-col items-center m-8">
-                <h3 class="mr-10 text-base mx-auto w-[200px]">Tailwind</h3>
-                <div class="flex justify-between w-[200px] pr-4 pl-4">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/half-star.svg" alt="" class="w-6">
-                  <img src="icon/no-star.svg" alt="" class="w-6">
-                  <img src="icon/no-star.svg" alt="" class="w-6">
-                  <img src="icon/no-star.svg" alt="" class="w-6">
-                </div>
-              </div>
-              <div class="flex max-[640px]:flex-col items-center m-8">
-                <h3 class="mr-10 text-base mx-auto w-[200px]">Javascript</h3>
-                <div class="flex justify-between w-[200px] pr-4 pl-4">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/no-star.svg" alt="" class="w-6">
-                  <img src="icon/no-star.svg" alt="" class="w-6">
-                  <img src="icon/no-star.svg" alt="" class="w-6">
-                </div>
-              </div>
-              <div class="flex max-[640px]:flex-col items-center m-8">
-                <h3 class="mr-10 text-base mx-auto w-[200px]">WordPress</h3>
-                <div class="flex justify-between w-[200px] pr-4 pl-4">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/half-star.svg" alt="" class="w-6">
-                  <img src="icon/no-star.svg" alt="" class="w-6">
-                </div>
-              </div>
-              <div class="flex max-[640px]:flex-col items-center m-8">
-                <h3 class="mr-10 text-base mx-auto w-[200px]">Structural Design</h3>
-                <div class="flex justify-between w-[200px] pr-4 pl-4">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/half-star.svg" alt="" class="w-6">
-                  <img src="icon/no-star.svg" alt="" class="w-6">
-                </div>
-              </div>
-              <div class="flex max-[640px]:flex-col items-center m-8">
-                <h3 class="mr-10 text-base shrink mx-auto w-[200px]">Technical Writing</h3>
-                <div class="flex justify-between w-[200px] pr-4 pl-4">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/half-star.svg" alt="" class="w-6">
-                  <img src="icon/no-star.svg" alt="" class="w-6">
-                </div>
-              </div>
-              <div class="flex max-[640px]:flex-col items-center m-8">
-                <h3 class="mr-10 text-base shrink mx-auto w-[200px]">Coaching</h3>
-                <div class="flex justify-between w-[200px] pr-4 pl-4">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/full-star.svg" alt="" class="w-6">
-                  <img src="icon/half-star.svg" alt="" class="w-6">
-                  <img src="icon/no-star.svg" alt="" class="w-6">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                            <br /><br />This multifaceted approach allows me to
+                            bring a unique blend of technical expertise, design
+                            thinking, and social responsibility to every
+                            project. I'm eager to collaborate on ventures that
+                            combine innovation with positive impact.
 
-      <!-- My Works section -->
-      <section>
-        <div class="container mx-auto mt-40 ">
-          <h2 class="text-center text-4xl font-bold mb-8">My <span class="text-primary">Works</span></h2>
-          <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-4">
-            <div class="bg-primary">
-              <img src="img/project1.png" alt="">
-              <div class="p-4">
-                <p class="text-light mb-6 font-light">Project: Development of an Hotel Booking Website</p>
-                <a class="bg-action p-2 text-white" href="https://grand-city-hotel.vercel.app/">Check it here</a>
-              </div>
-            </div>
-            <div class="bg-primary">
-              <img src="img/project2.png" alt="">
-              <div class="p-4">
-                <p class="text-light mb-6 font-light">Project: Development of a Newsblog Website</p>
-                <a class="bg-action p-2 text-white" href="https://newscorner.vercel.app/">Check it here</a>
-              </div>
-            </div>
-            <div class="bg-primary">
-              <img src="img/project3.png" alt="">
-              <div class="p-4">
-                <p class="text-light mb-6 font-light">Project: Renovation of Bratim Group Website</p>
-                <a class="bg-action p-2 text-white mx-auto" href="https://bratim.com/">Check it here</a>
-              </div>
-            </div>
-            <div class="bg-primary">
-              <img src="img/project4.png" alt="">
-              <div class="p-4">
-                <p class="text-light mb-6 font-light">Project: Development of a new personal portfolio website</p>
-                <a class="bg-action p-2 text-white" href="https://newporfoliosite.vercel.app/">Check it here</a>
-              </div>
-            </div>
-            <div class="bg-primary">
-              <img src="img/project5.png" alt="">
-              <div class="p-4">
-                <p class="text-light mb-6 font-light">Project: Frontend development program at Bratim Business School, Abuja.</p>
-                <a class="bg-action p-2 text-white" href="https://www.linkedin.com/posts/adeoyevictor_its-overwhelming-but-its-worth-the-pains-activity-7087122737315348481-AUOY?utm_source=share&utm_medium=member_desktop">Check it here</a>
-              </div>
-            </div>
-            <div class="bg-primary">
-              <img src="img/project6.png" alt="">
-              <div class="p-4">
-                <p class="text-light mb-6 font-light">Project:  MILLs Training Program at Nasarawa State University, Keffi.</p>
-                <a class="bg-action p-2 text-white mx-auto" href="https://www.linkedin.com/posts/adeoyevictor_mediaandinfomartionliteracy-digitaltools-activity-7085193690591215616-UyhZ?utm_source=share&utm_medium=member_desktop">Check it here</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                            <br /><br />I am open to opportunities in the
+                            following areas: Structural Engineer, Researcher,
+                            Product Designer, Product Developer, Capacity
+                            Building Facilitator, Program Coordinator, Project
+                            Management, or Community Program Coordinator.
 
-      <!-- Viblog Section -->
-      <section class="mt-20">
-        <h2 class="text-4xl font-bold mt-8 mb-8 text-center"><span class="text-primary">Vi</span>blog</h2>
-        <div class="container mx-auto grid grid-cols-3 max-[640px]:grid-cols-1 gap-4">
-          <div class="grid grid-cols-2 col-span-2 bg-gray">
-            <img src="img/blog3.png" alt="" class="p-4">
-            <div class="ml-8">
-              <button class="bg-texture p-1 rounded-2xl text-white text-[0.5rem] uppercase mt-8 transition-transform ease-in-out delay-150 hover:tranlate-y-1 duration-300 hover:scale-110 duration-300">Leadership</button>
-              <span><h2 class="font-bold text-xl mb-6">Leadership</h2></span>
-              <p class="mb-4 text-black">TIIDELab Fellowship cohort 5, week 5 Leadership Episode</p>
-              <a class="bg-gradient-to-r from-primary to-secondary p-2 text-white mx-auto" href="https://www.linkedin.com/posts/adeoyevictor_this-is-a-huge-opportunity-to-lead-the-whole-activity-7089848033915338753-nUQQ?utm_source=share&utm_medium=member_desktop">Learn more</a>
-            </div>
-          </div>
-          <div class="grid grid-cols-1 bg-primary">
-            <div class="ml-8">
-              <button class="bg-gray p-1 rounded-2xl text-black text-[0.5rem] uppercase mt-4">Reflection</button>
-              <span><h2 class="font-bold text-white text-xl mb-6">Peace Within</h2></span>
-              <p class="mb-4 text-light">In the midst of life's chaos, we often find ourselves caught between conflicting desires. </p>
-              <a class="bg-gradient-to-r from-primary to-secondary p-2 text-white mx-auto" href="https://www.linkedin.com/posts/adeoyevictor_success-growth-career-activity-7081984034318237696-5ssu?utm_source=share&utm_medium=member_desktop">Learn more</a>
-            </div>
-          </div>
-          <div class="grid grid-cols-1 bg-gray p-8">
-            <img src="img/blog2.png" alt="" class="p-4">
-            <div class="ml-8">
-              <button class="bg-action p-1 rounded-2xl text-wblack text-[0.5rem] uppercase mt-4">Humanity</button>
-              <span><h2 class="font-bold text-xl mb-6">Humanity</h2></span>
-              <p class="mb-4 text-black">🌟 Join us in Spreading Hope to Every Child! 🌟
-              </p>
-              <a class="bg-gradient-to-r from-primary to-secondary p-2 text-white mx-auto" href="https://www.linkedin.com/posts/adeoyevictor_communitydevelopment-supportingchildren-spreadinghope-activity-7084236511268806656-8EZt?utm_source=share&utm_medium=member_desktop">Learn more</a>
-            </div>
-          </div>
-          <div class="grid grid-cols-1 bg-primary">
-            <div class="ml-8">
-              <button class="bg-white p-1 rounded-2xl text-primary text-[0.5rem] uppercase mt-4">Technology</button>
-              <span><h2 class="font-bold text-white text-xl mb-6">Technology Trend</h2></span>
-              <p class="mb-4 text-light">Train-the-Trainer: An experience from the US Training</p>
-              <a class="bg-gradient-to-r from-primary to-secondary p-2 text-white mx-auto" href="https://www.linkedin.com/posts/adeoyevictor_future-career-success-activity-7056905671786598400-Oghx?utm_source=share&utm_medium=member_desktop">Learn more</a>
-            </div>
-            <img src="img/victor.jpg" alt="" class="p-4">
-          </div>
-          <div class="grid grid-cols-1 bg-grey">
-            <img src="img/victor.jpg" alt="" class="p-4">
-            <div class="ml-8">
-              <button class="bg-texture p-1 rounded-2xl text-white text-[0.5rem] uppercase mt-4">Leadership</button>
-              <span></span>
-              <p class="mb-4 text-black">Mr Shams at the National Stage: Changing the Status Quo</p>
-              <a class="bg-gradient-to-r from-primary to-secondary p-2 text-white mx-auto" href="https://www.linkedin.com/feed/update/urn:li:activity:7084636386040918016?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7084636386040918016%29">Learn more</a>
-            </div>
-          </div>
-        </div>
-      </section>
+                            <br /><br />I am readily available for a
+                            conversation. Please do not hesitate to contact me.
+                        </p>
+                        <button class="hover:scale-105 animate-bounce">
+                            <a
+                                class="bg-gradient-to-r from-primary to-secondary p-4 text-white rounded-full"
+                                href="#contact"
+                                >Reach Out</a
+                            >
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Services Section -->
+            <section>
+                <div class="container mx-auto mt-40">
+                    <h2 class="text-center text-4xl font-bold mb-8">
+                        My <span class="text-primary">Services</span>
+                    </h2>
+                    <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-4">
+                        <div class="bg-primary">
+                            <img
+                                src="img/engineering.png"
+                                alt="engineering services"
+                                class="h-64 w-full" />
+                            <div class="px-6 py-10">
+                                <p class="text-light mb-6 font-light">
+                                    Design of Structures (CAD & BIM),
+                                    Sustainable Infrastructure Development
+                                    Research, Simulations(Abaqus)
+                                </p>
+                                <a
+                                    class="bg-texture p-3 text-white mx-auto rounded-full text-base"
+                                    href="reach.html"
+                                    >Reach Out</a
+                                >
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img
+                                src="img/service1.jpg"
+                                alt=""
+                                class="h-64 w-full" />
+                            <div class="px-6 py-10">
+                                <p class="text-light mb-6 font-light">
+                                    Web Design, Web Development and Full-stack
+                                    Development
+                                </p>
+                                <a
+                                    class="bg-texture p-3 text-white mx-auto rounded-full text-base"
+                                    href="#contact"
+                                    >Reach Out</a
+                                >
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img
+                                src="img/service2.jpg"
+                                alt=""
+                                class="h-64 w-full" />
+                            <div class="px-6 py-10">
+                                <p class="text-light mb-6 font-light">
+                                    Capacity Building Facilitation (Digital
+                                    Litercy, Media and Information Training),
+                                    Program/Seminar/Technical Training
+                                    Coordination
+                                </p>
+                                <a
+                                    class="bg-texture p-3 text-white mx-auto rounded-full text-base"
+                                    href="reach.html"
+                                    >Reach Out</a
+                                >
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img
+                                src="img/milfy.png"
+                                alt="engineering services"
+                                class="h-64 w-full" />
+                            <div class="px-6 py-10">
+                                <p class="text-light mb-6 font-light">
+                                    Product Designing, Product Development,
+                                    Product Manaagement
+                                </p>
+                                <a
+                                    class="bg-texture p-3 text-white mx-auto rounded-full text-base"
+                                    href="reach.html"
+                                    >Reach Out</a
+                                >
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img
+                                src="img/community.jpg"
+                                alt=""
+                                class="h-64 w-full" />
+                            <div class="px-6 py-10">
+                                <p class="text-light mb-6 font-light">
+                                    Project Manaagement, Community Program
+                                    Coordination, Social work
+                                </p>
+                                <a
+                                    class="bg-texture p-3 text-white mx-auto rounded-full text-base"
+                                    href="#contact"
+                                    >Reach Out</a
+                                >
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img
+                                src="img/research.png"
+                                alt=""
+                                class="h-64 w-full" />
+                            <div class="px-6 py-10">
+                                <p class="text-light mb-6 font-light">
+                                    Qualitative and Quantitative Research
+                                    (Social Science and Engineering)
+                                </p>
+                                <a
+                                    class="bg-texture p-3 text-white mx-auto rounded-full text-base"
+                                    href="reach.html"
+                                    >Reach Out</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <!-- Contact Form -->
-      <section id="contact" class="bg-[url('img/contact.png')] bg-cover bg-no-repeat bg-center">
-        <div class="p-4">
-          <h2 class="text-4xl font-bold mt-8 mb-8 text-center"><span class="text-primary">I am</span> here</h2>
-          <p class="text-center">I am eager to hear from you.</p>
-          <form action="" class="container mx-auto">
-            <div class="m-8 w-[50%] mx-auto">
-              <label class="text-base" for="firstName">First Name</label><br>
-              <input class="bg-gray rounded-xl w-[100%] text-sm p-2" type="text" name="firstName" id="firstName" placeholder="Enter your first name">
-            </div>
-            <div class="m-8 w-[50%] mx-auto">
-              <label class="text-base" for="lastName">Last Name</label><br>
-              <input class="bg-gray rounded-xl w-[100%] text-sm p-2" type="text" name="lastName" id="lastName" placeholder="Enter your Last name">
-            </div>
-            <div class="m-8 w-[50%] mx-auto">
-              <label for="email">Email</label><br>
-              <input class="bg-gray rounded-xl w-[100%] text-sm p-2" type="email" name="email" id="email" placeholder="Enter your email">
-            </div>
-            <div class="m-8 w-[50%] mx-auto">
-              <label for="message">Message</label><br>
-              <textarea class="bg-gray rounded-xl w-[100%] text-sm mb-4 p-2" name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
-              <a class="bg-gradient-to-r from-primary to-secondary p-2 text-center text-white mx-auto" href="reach.html">Send</a>
-            </div>
-          </form>
-        </div>
-      </section>
+            <!-- Skillsect section -->
+            <section>
+                <div
+                    class="grid grid-cols-2 max-[640px]:grid-cols-1 container mx-auto mt-40">
+                    <div>
+                        <h2 class="text-4xl font-bold mt-8 mb-8 text-center">
+                            <span class="text-primary">My</span> Skillset
+                        </h2>
+                        <img src="img/skillset.jpg" alt="" />
+                    </div>
+                    <div class="">
+                        <div class="p-20">
+                            <div
+                                class="border-l-2 border-primary border-dashed px-10">
+                                <h3 class="text-base mx-auto">
+                                    AutoCAD | Civil 3D | Orion | Protastructure
+                                    | Staadpro | Etabs | Abaqus
+                                </h3>
+                                <div
+                                    class="flex justify-between w-[200px] py-2">
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/half-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                </div>
+                            </div>
+                            <div
+                                class="border-l-2 border-primary border-dashed px-10 my-10">
+                                <h3 class="text-base mx-auto">
+                                    HTML | Vanilla css | Tailwind css |
+                                    Bootstrap | Vanilla JS | Jquery | NODEJS |
+                                    Express | Wordpress | GIT
+                                </h3>
+                                <div
+                                    class="flex justify-between w-[200px] py-2">
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/half-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                </div>
+                            </div>
+                            <div
+                                class="border-l-2 border-primary border-dashed px-10 my-10">
+                                <h3 class="text-base mx-auto">
+                                    Figma | Whimsical | Photopea | Canva
+                                    ClipChamp | Camtasia | Adobe XD | Photoshop
+                                    | Moodle
+                                </h3>
+                                <div
+                                    class="flex justify-between w-[200px] py-2">
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/half-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                </div>
+                            </div>
+                            <div
+                                class="border-l-2 border-primary border-dashed px-10 my-10">
+                                <h3 class="text-base mx-auto">
+                                    Data Analysis | SPSS | NVivo
+                                </h3>
+                                <div
+                                    class="flex justify-between w-[200px] py-2">
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/half-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                </div>
+                            </div>
+                            <div
+                                class="border-l-2 border-primary border-dashed px-10 my-10">
+                                <h3 class="text-base mx-auto">
+                                    Agile Project Management | Product
+                                    Management
+                                </h3>
+                                <div
+                                    class="flex justify-between w-[200px] py-2">
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/half-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                </div>
+                            </div>
+                            <div
+                                class="border-l-2 border-primary border-dashed px-10 my-10">
+                                <h3 class="text-base mx-auto">
+                                    Zoom | Google Meet | Microsoft Team
+                                </h3>
+                                <div
+                                    class="flex justify-between w-[200px] py-2">
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/full-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                    <img
+                                        src="icon/half-star.svg"
+                                        alt=""
+                                        class="w-6" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <!-- Footer -->
-      <footer class="bg-primary">
-          <nav class="container m-auto">
-            <div class="pt-6 flex flex-wrap items-center justify-between">
-              <h1 class="text-2xl text-white font-semibold"><a href="#">VINODE</a></h1>
-              <ul class="flex flex-wrap text-white font-light">
-                    <li class="p-3"><a href="index.html">Home</a></li>
-                    <li class="p-3"><a href="meet.html">Meet Me</a></li>
-                    <li class="p-3"><a href="services.html">My Services</a></li>
-                    <li class="p-3"><a href="skills.html">My Skills</a></li>
-                    <li class="p-3"><a href="works.html">Works</a></li>
-                    <li class="p-3"><a href="blog.html">Viblog</a></li>
-                    <li class="p-3 bg-action text-black animate-pulse"><a href="#contact">Reach Out</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="text-center mt-12">
-          <a href="https://github.com/Officialvic" class="text-white p-2"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/adeoyevictor/" class="text-white p-2"><i class="fa-brands fa-linkedin"></i></i></a>
-          <a href="https://twitter.com/AdeoyeOnaopemi3?t=zpQa8S6VqWGZ-7RfORJv1g&s=09" class="text-white p-2"><i class="fa-brands fa-twitter"></i></i></a>
-          <a href="https://medium.com/@onaopeadeoye" class="text-white p-2"><i class="fa-brands fa-medium"></i></i></a>
-        </div>
-        <p class="font-light text-center text-action">+ 2348169921855 | onaopeadeoye@gmail.com | Abuja Nigeria</p>
-        <div>
-          <p class="text-center text-light font-light">&copy;copyright 2023 All Right Reserved</p>
-        </div>
-      </footer>
-    </main>
-</body>
+            <!-- My Works section -->
+            <section>
+                <div class="container mx-auto mt-40">
+                    <h2 class="text-center text-4xl font-bold mb-8">
+                        My <span class="text-primary">Works</span>
+                    </h2>
+                    <div class="grid grid-cols-3 max-[640px]:grid-cols-1 gap-4">
+                        <div class="bg-primary">
+                            <img
+                                src="img/structural design.png"
+                                class="h-64 w-full"
+                                alt="" />
+                            <div class="p-4 pb-10">
+                                <a
+                                    class="bg-texture p-1 mx-auto rounded-full text-sm text-white"
+                                    href=""
+                                    >Engineering</a
+                                >
+                                <p class="text-light my-6 font-light">
+                                    <span class="font-bold">Project:</span>
+                                    Complete Structural Design of Public Office
+                                    Development - RC and Steel Structures
+                                </p>
+                                <a
+                                    class="bg-action p-3 mx-auto rounded-full text-base"
+                                    href="#"
+                                    >Approved for Construction</a
+                                >
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img
+                                src="img/International Conference.png"
+                                class="h-64 w-full"
+                                alt="" />
+                            <div class="p-4 pb-10">
+                                <a
+                                    class="bg-texture p-1 mx-auto rounded-full text-sm text-white"
+                                    href=""
+                                    >Engineering</a
+                                >
+                                <p class="text-light my-6 font-light">
+                                    <span class="font-bold">Project:</span>
+                                    Research Paper on Cultural Sustainability in
+                                    Resettlement: Assessing PET Blocks for
+                                    Eco-friendly Rehabilitation Infrastructure
+                                    in Nigeria.
+                                </p>
+                                <a
+                                    class="bg-action p-3 mx-auto rounded-full text-base"
+                                    href="#"
+                                    >Accepted for Publication</a
+                                >
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img
+                                src="img/engineering.png"
+                                class="h-64 w-full"
+                                alt="" />
+                            <div class="p-4 pb-10">
+                                <a
+                                    class="bg-texture p-1 mx-auto rounded-full text-sm text-white"
+                                    href=""
+                                    >Engineering</a
+                                >
+                                <p class="text-light my-6 font-light">
+                                    <span class="font-bold">Project:</span>
+                                    Analysis and Design of Mini-Indoor
+                                    Recreation Complex
+                                </p>
+                                <a
+                                    class="bg-action p-3 mx-auto rounded-full text-base"
+                                    href="http://bit.ly/482eiXR"
+                                    >Read Publication Here</a
+                                >
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img
+                                src="img/lecture.jpg"
+                                class="h-64 w-full"
+                                alt="" />
+                            <div class="p-4 pb-10">
+                                <a
+                                    class="bg-secondary p-1 mx-auto rounded-full text-sm text-white"
+                                    href=""
+                                    >Human Development</a
+                                >
+                                <p class="text-light my-6 font-light">
+                                    <span class="font-bold">Activity:</span>
+                                    Teaching Assistant for Design Studio
+                                    Undergrad Program at the prestigious
+                                    University of Abuja, Nigeria.
+                                </p>
+                                <a
+                                    class="bg-action p-3 mx-auto rounded-full text-base"
+                                    href="https://www.linkedin.com/posts/adeoyevictor_africa-sustainability-globalleadership-activity-7178357842846879744-koV_?utm_source=share&utm_medium=member_desktop"
+                                    >Watch Clip</a
+                                >
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img
+                                src="img/MILLs_89.jpg"
+                                class="h-64 w-full"
+                                alt="" />
+                            <div class="p-4 pb-10">
+                                <a
+                                    class="bg-secondary p-1 mx-auto rounded-full text-sm text-white"
+                                    href=""
+                                    >Human Development</a
+                                >
+                                <p class="text-light my-6 font-light">
+                                    <span class="font-bold">Project:</span>
+                                    Technical Training Session on Essential
+                                    Fact-checking Technologies to combat
+                                    misinformation and fake news with Librarians
+                                    and Information Professionals Hosted by
+                                    Nigeria Library Association March 2024.
+                                </p>
+                                <a
+                                    class="bg-action p-3 mx-auto rounded-full text-base"
+                                    href="#"
+                                    >Live Session</a
+                                >
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img
+                                src="img/idp3.png"
+                                class="h-64 w-full"
+                                alt="" />
+                            <div class="p-4 pb-10">
+                                <a
+                                    class="bg-green p-1 mx-auto rounded-full text-sm text-black font-bold"
+                                    href=""
+                                    >Social Work</a
+                                >
+                                <p class="text-light my-6 font-light">
+                                    <span class="font-bold">Activity:</span>
+                                    HOPE Project - Social Outreach to the
+                                    Internally Displaced Person IDP Community
+                                </p>
+                                <a
+                                    class="bg-action p-3 mx-auto rounded-full text-base"
+                                    href="https://www.linkedin.com/posts/adeoyevictor_viconglobal-communitydevelopement-activity-7088931326992486400-6FLM?utm_source=share&utm_medium=member_desktop"
+                                    >Project Record</a
+                                >
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img
+                                src="img/orphanage.jpg"
+                                class="h-64 w-full"
+                                alt="" />
+                            <div class="p-4 pb-10">
+                                <a
+                                    class="bg-green p-1 mx-auto rounded-full text-sm text-black font-bold"
+                                    href=""
+                                    >Social Work</a
+                                >
+                                <p class="text-light my-6 font-light">
+                                    <span class="font-bold">Activity:</span>
+                                    REACH Project - Social Outreach to the
+                                    Orphanage Homes in Abuja and Nasarawa,
+                                    Nigeria
+                                </p>
+                                <a
+                                    class="bg-action p-3 mx-auto rounded-full text-base"
+                                    href="https://www.linkedin.com/posts/adeoyevictor_viscodinafrica-sustainability-communitydevelopment-activity-7167841850056282113-9NMt?utm_source=share&utm_medium=member_desktop"
+                                    >Project Record</a
+                                >
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img
+                                src="img/milfy.png"
+                                class="h-64 w-full"
+                                alt="" />
+                            <div class="p-4 pb-10">
+                                <a
+                                    class="bg-gray p-1 mx-auto rounded-full text-sm text-black"
+                                    href=""
+                                    >Information Technology</a
+                                >
+                                <p class="text-light my-6 font-light">
+                                    <span class="font-bold">Project:</span>
+                                    Product Design of Digital Web Application
+                                    with AI Intergration to Promote Media and
+                                    Information Literacy and Combat the Spread
+                                    of Misinformation - UNESCO Global Media &
+                                    Information Literacy Hackathon 2023
+                                </p>
+                                <a
+                                    class="bg-action p-3 mx-auto rounded-full text-base"
+                                    href="https://www.figma.com/proto/YRR1uVfbJuv84BMtcJYAOz/UNESCO-HACKATHON?node-id=653-2011&starting-point-node-id=653%3A2011&scaling=scale-down"
+                                    >Access Prototype Here</a
+                                >
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img
+                                src="img/abaqus.png"
+                                class="h-64 w-full"
+                                alt="" />
+                            <div class="p-4 pb-10">
+                                <a
+                                    class="bg-texture p-1 mx-auto rounded-full text-sm text-white"
+                                    href=""
+                                    >Engineering</a
+                                >
+                                <p class="text-light my-6 font-light">
+                                    <span class="font-bold">Project:</span>
+                                    Simulation of the behaviours of Stainless
+                                    Steel Composite Beam - Abaqus Project
+                                </p>
+                                <a
+                                    class="bg-action p-3 mx-auto rounded-full text-base"
+                                    href="#">
+                                    Exclusive for a Client
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img
+                                src="img/site.jpg"
+                                class="h-64 w-full"
+                                alt="" />
+                            <div class="p-4 pb-10">
+                                <a
+                                    class="bg-texture p-1 mx-auto rounded-full text-sm text-white"
+                                    href=""
+                                    >Engineering</a
+                                >
+                                <p class="text-light my-6 font-light">
+                                    <span class="font-bold">Project:</span>
+                                    Periodical Supervision of Construction Works
+                                    - Checks for Compliances to Approved
+                                    Structural Designs
+                                </p>
+                                <a
+                                    class="bg-action p-3 mx-auto rounded-full text-base"
+                                    href="#">
+                                    Exclusive Project
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img src="img/bds.png" class="h-64 w-full" alt="" />
+                            <div class="p-4 pb-10">
+                                <a
+                                    class="bg-gray p-1 mx-auto rounded-full text-sm text-black"
+                                    href=""
+                                    >Information Technology</a
+                                >
+                                <p class="text-light my-6 font-light">
+                                    <span class="font-bold">Project:</span>
+                                    Development of Brain Digital Solution - Tech
+                                    Company Website
+                                </p>
+                                <a
+                                    class="bg-action p-3 mx-auto rounded-full text-base"
+                                    href="https://brainsolutionsagency.com.ng/"
+                                    >Access Prototype Here</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="bg-primary">
+                            <img src="img/project1.png" alt="" />
+                            <div class="p-4">
+                                <p class="text-light mb-6 font-light">
+                                    Project: Development of an Hotel Booking
+                                    Website
+                                </p>
+                                <a
+                                    class="bg-action p-3 text-white mx-auto rounded-full text-base"
+                                    href="https://grand-city-hotel.vercel.app/"
+                                    >Check it here</a
+                                >
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img src="img/project2.png" alt="" />
+                            <div class="p-4">
+                                <p class="text-light mb-6 font-light">
+                                    Project: Development of a Newsblog Website
+                                </p>
+                                <a
+                                    class="bg-action p-2 text-white"
+                                    href="https://newscorner.vercel.app/"
+                                    >Check it here</a
+                                >
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img src="img/project3.png" alt="" />
+                            <div class="p-4">
+                                <p class="text-light mb-6 font-light">
+                                    Project: Renovation of Bratim Group Website
+                                </p>
+                                <a
+                                    class="bg-action p-2 text-white mx-auto"
+                                    href="https://bratim.com/"
+                                    >Check it here</a
+                                >
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img src="img/project4.png" alt="" />
+                            <div class="p-4">
+                                <p class="text-light mb-6 font-light">
+                                    Project: Development of a new personal
+                                    portfolio website
+                                </p>
+                                <a
+                                    class="bg-action p-2 text-white"
+                                    href="https://newporfoliosite.vercel.app/"
+                                    >Check it here</a
+                                >
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img src="img/project5.png" alt="" />
+                            <div class="p-4">
+                                <p class="text-light mb-6 font-light">
+                                    Project: Frontend development program at
+                                    Bratim Business School, Abuja.
+                                </p>
+                                <a
+                                    class="bg-action p-2 text-white"
+                                    href="https://www.linkedin.com/posts/adeoyevictor_its-overwhelming-but-its-worth-the-pains-activity-7087122737315348481-AUOY?utm_source=share&utm_medium=member_desktop"
+                                    >Check it here</a
+                                >
+                            </div>
+                        </div>
+                        <div class="bg-primary">
+                            <img src="img/project6.png" alt="" />
+                            <div class="p-4">
+                                <p class="text-light mb-6 font-light">
+                                    Project: MILLs Training Program at Nasarawa
+                                    State University, Keffi.
+                                </p>
+                                <a
+                                    class="bg-action p-2 text-white mx-auto"
+                                    href="https://www.linkedin.com/posts/adeoyevictor_mediaandinfomartionliteracy-digitaltools-activity-7085193690591215616-UyhZ?utm_source=share&utm_medium=member_desktop"
+                                    >Check it here</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Viblog Section -->
+            <section class="mt-20">
+                <h2 class="text-4xl font-bold mt-8 mb-8 text-center">
+                    <span class="text-primary">Vi</span>blog
+                </h2>
+                <div
+                    class="container mx-auto grid grid-cols-3 max-[640px]:grid-cols-1 gap-4">
+                    <div class="grid grid-cols-1 col-span-2 bg-gray">
+                        <iframe
+                            src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7178357743584481280?compact=1"
+                            height="399"
+                            width="770"
+                            frameborder="0"
+                            allowfullscreen=""
+                            title="Embedded post"></iframe>
+                    </div>
+                    <div class="grid grid-cols-1 bg-primary">
+                        <div class="ml-8">
+                            <button
+                                class="bg-gray p-1 rounded-2xl text-black text-[0.5rem] uppercase mt-4">
+                                Reflection
+                            </button>
+                            <span
+                                ><h2 class="font-bold text-white text-xl mb-6">
+                                    Peace Within
+                                </h2></span
+                            >
+                            <p class="mb-4 text-light">
+                                In the midst of life's chaos, we often find
+                                ourselves caught between conflicting desires.
+                            </p>
+                            <a
+                                class="bg-gradient-to-r from-primary to-secondary p-2 text-white mx-auto"
+                                href="https://www.linkedin.com/posts/adeoyevictor_success-growth-career-activity-7081984034318237696-5ssu?utm_source=share&utm_medium=member_desktop"
+                                >Learn more</a
+                            >
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 bg-primary">
+                        <div class="ml-8">
+                            <button
+                                class="bg-gray p-1 rounded-2xl text-black text-[0.5rem] uppercase mt-4">
+                                Reflection
+                            </button>
+                            <span
+                                ><h2 class="font-bold text-white text-xl mb-6">
+                                    Peace Within
+                                </h2></span
+                            >
+                            <iframe
+                                src="https://www.linkedin.com/embed/feed/update/urn:li:share:7169285244959883264"
+                                height="250"
+                                width=""
+                                frameborder="0"
+                                allowfullscreen=""
+                                title="Embedded post"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 col-span-2 bg-gray">
+                        <img src="img/blog3.png" alt="" class="p-4" />
+                        <div class="ml-8">
+                            <button
+                                class="bg-texture p-1 rounded-2xl text-white text-[0.5rem] uppercase mt-8 transition-transform ease-in-out delay-150 hover:tranlate-y-1 duration-300 hover:scale-110 duration-300">
+                                Leadership
+                            </button>
+                            <span
+                                ><h2 class="font-bold text-xl mb-6">
+                                    Leadership
+                                </h2></span
+                            >
+                            <p class="mb-4 text-black">
+                                TIIDELab Fellowship cohort 5, week 5 Leadership
+                                Episode
+                            </p>
+                            <a
+                                class="bg-gradient-to-r from-primary to-secondary p-2 text-white mx-auto"
+                                href="https://www.linkedin.com/posts/adeoyevictor_this-is-a-huge-opportunity-to-lead-the-whole-activity-7089848033915338753-nUQQ?utm_source=share&utm_medium=member_desktop"
+                                >Learn more</a
+                            >
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 bg-primary">
+                        <div class="ml-8">
+                            <button
+                                class="bg-gray p-1 rounded-2xl text-black text-[0.5rem] uppercase mt-4">
+                                Reflection
+                            </button>
+                            <span
+                                ><h2 class="font-bold text-white text-xl mb-6">
+                                    Peace Within
+                                </h2></span
+                            >
+                            <p class="mb-4 text-light">
+                                In the midst of life's chaos, we often find
+                                ourselves caught between conflicting desires.
+                            </p>
+                            <a
+                                class="bg-gradient-to-r from-primary to-secondary p-2 text-white mx-auto"
+                                href="https://www.linkedin.com/posts/adeoyevictor_success-growth-career-activity-7081984034318237696-5ssu?utm_source=share&utm_medium=member_desktop"
+                                >Learn more</a
+                            >
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 bg-gray p-8">
+                        <img src="img/blog2.png" alt="" class="p-4" />
+                        <div class="ml-8">
+                            <button
+                                class="bg-action p-1 rounded-2xl text-wblack text-[0.5rem] uppercase mt-4">
+                                Humanity
+                            </button>
+                            <span
+                                ><h2 class="font-bold text-xl mb-6">
+                                    Humanity
+                                </h2></span
+                            >
+                            <p class="mb-4 text-black">
+                                🌟 Join us in Spreading Hope to Every Child! 🌟
+                            </p>
+                            <a
+                                class="bg-gradient-to-r from-primary to-secondary p-2 text-white mx-auto"
+                                href="https://www.linkedin.com/posts/adeoyevictor_communitydevelopment-supportingchildren-spreadinghope-activity-7084236511268806656-8EZt?utm_source=share&utm_medium=member_desktop"
+                                >Learn more</a
+                            >
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 bg-primary">
+                        <div class="ml-8">
+                            <button
+                                class="bg-white p-1 rounded-2xl text-primary text-[0.5rem] uppercase mt-4">
+                                Technology
+                            </button>
+                            <span
+                                ><h2 class="font-bold text-white text-xl mb-6">
+                                    Technology Trend
+                                </h2></span
+                            >
+                            <p class="mb-4 text-light">
+                                Train-the-Trainer: An experience from the US
+                                Training
+                            </p>
+                            <a
+                                class="bg-gradient-to-r from-primary to-secondary p-2 text-white mx-auto"
+                                href="https://www.linkedin.com/posts/adeoyevictor_future-career-success-activity-7056905671786598400-Oghx?utm_source=share&utm_medium=member_desktop"
+                                >Learn more</a
+                            >
+                        </div>
+                        <img src="img/victor.jpg" alt="" class="p-4" />
+                    </div>
+                    <div class="grid grid-cols-1 bg-grey">
+                        <img src="img/shams.png" alt="" class="p-4" />
+                        <div class="ml-8">
+                            <button
+                                class="bg-texture p-1 rounded-2xl text-white text-[0.5rem] uppercase mt-4">
+                                Leadership
+                            </button>
+                            <span></span>
+                            <p class="mb-4 text-black">
+                                Mr Shams at the National Stage: Changing the
+                                Status Quo
+                            </p>
+                            <a
+                                class="bg-gradient-to-r from-primary to-secondary p-2 text-white mx-auto"
+                                href="https://www.linkedin.com/feed/update/urn:li:activity:7084636386040918016?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7084636386040918016%29"
+                                >Learn more</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Form -->
+            <section
+                id="contact"
+                class="bg-[url('img/contact.png')] bg-cover bg-no-repeat bg-center">
+                <div class="p-4">
+                    <h2 class="text-4xl font-bold mt-8 mb-8 text-center">
+                        <span class="text-primary">I am</span> here
+                    </h2>
+                    <p class="text-center">I am eager to hear from you.</p>
+                    <form
+                        action="https://formspree.io/f/mqkrygvp"
+                        method="POST"
+                        enctype="multipart/form-data"
+                        class="container mx-auto">
+                        <div class="m-8 w-[50%] mx-auto">
+                            <label class="text-base" for="firstName"
+                                >First Name</label
+                            ><br />
+                            <input
+                                class="bg-gray rounded-xl w-[100%] text-sm p-2"
+                                type="text"
+                                name="firstName"
+                                id="firstName"
+                                placeholder="Enter your first name"
+                                required />
+                        </div>
+                        <div class="m-8 w-[50%] mx-auto">
+                            <label class="text-base" for="lastName"
+                                >Last Name</label
+                            ><br />
+                            <input
+                                class="bg-gray rounded-xl w-[100%] text-sm p-2"
+                                type="text"
+                                name="lastName"
+                                id="lastName"
+                                placeholder="Enter your Last name"
+                                required />
+                        </div>
+                        <div class="m-8 w-[50%] mx-auto">
+                            <label for="email">Email</label><br />
+                            <input
+                                class="bg-gray rounded-xl w-[100%] text-sm p-2"
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required />
+                        </div>
+                        <div class="m-8 w-[50%] mx-auto">
+                            <label for="message">Message</label><br />
+                            <textarea
+                                class="bg-gray rounded-xl w-[100%] text-sm mb-4 p-2"
+                                name="message"
+                                id="message"
+                                cols="30"
+                                rows="10"
+                                placeholder="Enter your message"
+                                required></textarea>
+                            <!-- <a
+                                class="bg-gradient-to-r from-primary to-secondary p-2 text-center text-white mx-auto"
+                                href="reach.html"
+                                >Send</a> -->
+                            <button
+                                class="bg-gradient-to-r from-primary to-secondary px-4 py-2 text-center text-white mx-auto"
+                                type="submit">
+                                Send
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="bg-primary">
+                <nav class="container m-auto">
+                    <div
+                        class="pt-6 flex flex-wrap items-center justify-between">
+                        <h1 class="text-2xl text-white font-semibold">
+                            <a href="#">VINODE</a>
+                        </h1>
+                        <ul class="flex flex-wrap text-white font-light">
+                            <li class="p-3"><a href="index.html">Home</a></li>
+                            <li class="p-3"><a href="meet.html">Meet Me</a></li>
+                            <li class="p-3">
+                                <a href="services.html">My Services</a>
+                            </li>
+                            <li class="p-3">
+                                <a href="skills.html">My Skills</a>
+                            </li>
+                            <li class="p-3"><a href="works.html">Works</a></li>
+                            <li class="p-3"><a href="blog.html">Viblog</a></li>
+                            <li class="p-3 bg-action text-black animate-pulse">
+                                <a href="#contact">Reach Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="text-center mt-12">
+                    <a
+                        href="https://github.com/Officialvic"
+                        class="text-white p-2"
+                        ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/adeoyevictor/"
+                        class="text-white p-2"
+                        ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                    <a
+                        href="https://twitter.com/AdeoyeOnaopemi3?t=zpQa8S6VqWGZ-7RfORJv1g&s=09"
+                        class="text-white p-2"
+                        ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                    <a
+                        href="https://medium.com/@onaopeadeoye"
+                        class="text-white p-2"
+                        ><i class="fa-brands fa-medium"></i
+                    ></a>
+                </div>
+                <p class="font-light text-center text-action">
+                    + 2348169921855 | onaopeadeoye@gmail.com | Abuja Nigeria
+                </p>
+                <div>
+                    <p class="text-center text-light font-light">
+                        &copy;copyright 2023 All Right Reserved
+                    </p>
+                </div>
+            </footer>
+        </main>
+    </body>
 </html>
