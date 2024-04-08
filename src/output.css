@@ -4163,6 +4163,11 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray {
+  --tw-text-opacity: 1;
+  color: rgb(238 237 237 / var(--tw-text-opacity));
+}
+
 .no-underline {
   text-decoration-line: none;
 }
