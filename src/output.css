@@ -3481,6 +3481,14 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 2rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -3737,10 +3745,6 @@ details.collapse summary::-webkit-details-marker {
 
 .rounded-lg {
   border-radius: 0.5rem;
-}
-
-.rounded-xl {
-  border-radius: 0.75rem;
 }
 
 .rounded-e-\[0\.25rem\] {
@@ -4163,11 +4167,6 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray {
-  --tw-text-opacity: 1;
-  color: rgb(238 237 237 / var(--tw-text-opacity));
-}
-
 .no-underline {
   text-decoration-line: none;
 }
@@ -4349,6 +4348,10 @@ details.collapse summary::-webkit-details-marker {
   grid-row-start: 2;
   height: 100%;
   width: 100%;
+}
+
+.hero-content {
+  grid-row-start: 2;
 }
 
 .timeline-box {
@@ -4629,11 +4632,6 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:bg-\[url\(\'img\/viKtor\.jpg\'\)\] {
     background-image: url('img/viKtor.jpg');
-  }
-
-  .lg\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
   }
 
   .lg\:px-20 {
