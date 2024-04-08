@@ -3489,6 +3489,10 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 7rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
