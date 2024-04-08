@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./output.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet" />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="icon/apple-touch-icon.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="icon/favicon-32x32.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="icon/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <!-- Fontawesome Icon -->
+        <!-- MATERIAL ICONS CDN -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" />
+        <script
+            src="https://kit.fontawesome.com/fa7c07a049.js"
+            crossorigin="anonymous"></script>
+        <!-- TAILWIND CDN(CONTENT DELIVERY NETWORK) -->
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <title>viKtor</title>
+    </head>
+    <body
+        class="scroll-smooth transition-transform ease-in duration-300 bg-slate-50">
+        <header>
+            <!-- Back to top button -->
+            <button
+                type="button"
+                data-twe-ripple-init
+                data-twe-ripple-color="light"
+                class="!fixed bottom-5 end-5 hidden rounded-full bg-red-600 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg z-50"
+                id="btn-back-to-top">
+                <span class="[&>svg]:w-4">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="3"
+                        stroke="currentColor">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                    </svg>
+                </span>
+            </button>
+            <!-- NavBar -->
+            <div class="navbar bg-primary lg:px-20">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div
+                            tabindex="0"
+                            role="button"
+                            class="btn btn-ghost lg:hidden">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5 text-white"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul
+                            tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li class="p-3 hover:text-gray">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a href="#about">Meet Me</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a href="#service">My Services</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a href="#skill">My Skills</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a href="#work">Works</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a href="#viblog">Viblog</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a
+                                    href="http://www.youtube.com/@_officialvic"
+                                    target="_blank"
+                                    >ViVlog</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl text-white">viKtor</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="p-3 hover:text-gray">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="p-3 hover:text-gray">
+                            <a href="#about">Meet Me</a>
+                        </li>
+                        <li class="p-3 hover:text-gray">
+                            <a href="#service">My Services</a>
+                        </li>
+                        <li class="p-3 hover:text-gray">
+                            <a href="#skill">My Skills</a>
+                        </li>
+                        <li class="p-3 hover:text-gray">
+                            <a href="#work">Works</a>
+                        </li>
+                        <li class="p-3 hover:text-gray">
+                            <a href="#viblog">Viblog</a>
+                        </li>
+                        <li class="p-3 hover:text-gray">
+                            <a
+                                href="http://www.youtube.com/@_officialvic"
+                                target="_blank"
+                                >ViVlog</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a
+                        href="#contact"
+                        class="btn bg-gradient-to-r from-primary to-secondary border-none ring-2 ring-blue-500/50 p-4 text-white"
+                        >Let's Talk</a
+                    >
+                </div>
+            </div>
+            <!-- Hero -->
+            <div
+                class="hero min-h-screen bg-[url('img/MILLs_89.jpg')] lg:bg-[url('img/viKtor.jpg')]">
+                <div class="hero-overlay bg-opacity-60 lg:bg-opacity-0"></div>
+                <div
+                    class="hero-content text-left text-white lg:text-black lg:px-20">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">
+                            Get <span class="text-primary">VALUE</span> <br />
+                            for your budget
+                        </h1>
+                        <p class="mb-5">
+                            I engineer sustainable infrastructure and promote
+                            positive community development through education and
+                            technology.
+                        </p>
+                        <button>
+                            <a
+                                href="#contact"
+                                class="btn bg-gradient-to-r from-primary to-secondary border-none ring-2 ring-blue-500/50 p-4 text-white"
+                                >Let's Talk</a
+                            >
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main body -->
+        <main>
+            <section id="about">
+                <div
+                    class="hero py-20 min-h-screen bg-gray text-black lg:px-20">
+                    <div
+                        class="hero-content flex-col col-span-2 lg:flex-row lg:gap-10">
+                        <img
+                            src="img/victor.jpg"
+                            class="lg:w-2/5 rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 class="text-5xl font-bold">
+                                <span class="text-primary">Meet</span> Me
+                            </h1>
+                            <p class="py-6">
+                                I'm Victor O. Adeoye, a civil and structural
+                                engineer with a passion for sustainable
+                                infrastructure and empowering communities. While
+                                I design structures by day, my evenings are
+                                dedicated to using design thinking to craft
+                                user-friendly software and other technological
+                                solutions.
+
+                                <br /><br />Beyond engineering, I'm a firm
+                                believer in the power of technology for social
+                                good. Partnering with the Nigerian Library
+                                Association, I've equipped over 500
+                                professionals and students with media and
+                                digital literacy tools to combat misinformation
+                                and fake news. My dedication extends to
+                                community outreach programs, supporting
+                                internally displaced persons and orphans and
+                                providing not just resources, but also hope.
+
+                                <br /><br />This multifaceted approach allows me
+                                to bring a unique blend of technical expertise,
+                                design thinking, and social responsibility to
+                                every project. I'm eager to collaborate on
+                                ventures that combine innovation with positive
+                                impact.
+
+                                <br /><br />I am open to opportunities in the
+                                following areas: Structural Engineer,
+                                Researcher, Product Designer, Product Developer,
+                                Capacity Building Facilitator, Program
+                                Coordinator, Project Management, or Community
+                                Program Coordinator.
+
+                                <br /><br />I am readily available for a
+                                conversation. Please do not hesitate to contact
+                                me.
+                            </p>
+                            <button>
+                                <a
+                                    class="bg-gradient-to-r from-primary to-secondary p-4 text-white rounded-xl"
+                                    href="#contact"
+                                    >Contact Me</a
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services -->
+            <section id="service" class="lg:px-20 bg-white py-10">
+                <h2 class="text-center text-4xl font-bold mb-8">
+                    My <span class="text-primary">Services</span>
+                </h2>
+                <div class="lg:grid grid-cols-3 gap-1">
+                    <div
+                        class="card card-compact lg:w-80 w-72 mx-auto bg-primary shadow-xl my-8">
+                        <figure>
+                            <img
+                                src="img/engineering.png"
+                                alt="engineering services" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Structural Engineering!</h2>
+                            <p>
+                                Design of Structures (CAD & BIM), Sustainable
+                                Infrastructure Development Research,
+                                Simulations(Abaqus)
+                            </p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">
+                                    <a href="#contact">Contact Me</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card card-compact lg:w-80 w-72 mx-auto bg-primary shadow-xl my-8">
+                        <figure>
+                            <img src="img/service1.jpg" alt="tech solutions" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Tech Solutions!</h2>
+                            <p>
+                                Web Design, Web Development and Full-stack
+                                Development
+                            </p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">
+                                    <a href="#contact">Contact Me</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card card-compact lg:w-80 w-72 mx-auto bg-primary shadow-xl my-8">
+                        <figure>
+                            <img
+                                src="img/service2.jpg"
+                                alt="human development" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Human Development!</h2>
+                            <p>
+                                Capacity Building Facilitation (Digital Litercy,
+                                Media and Information Training),
+                                Program/Seminar/Technical Training Coordination
+                            </p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">
+                                    <a href="#contact">Contact Me</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="card card-compact lg:w-80 w-72 mx-auto bg-primary shadow-xl my-8">
+                        <figure>
+                            <img src="img/milfy.png" alt="product creation" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Prodcuct Creation!</h2>
+                            <p>
+                                Product Designing, Product Development, Product
+                                Manaagement
+                            </p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">
+                                    <a href="#contact">Contact Me</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card card-compact lg:w-80 w-72 mx-auto bg-primary shadow-xl my-8">
+                        <figure>
+                            <img src="img/community.jpg" alt="social impact" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Social Impact!</h2>
+                            <p>
+                                Project Manaagement, Community Program
+                                Coordination, Social work
+                            </p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">
+                                    <a href="#contact">Contact Me</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card card-compact lg:w-80 w-72 mx-auto bg-primary shadow-xl my-8">
+                        <figure>
+                            <img src="img/research.png" alt="research work" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Research Works!</h2>
+                            <p>
+                                Qualitative and Quantitative Research (Social
+                                Science and Engineering)
+                            </p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">
+                                    <a href="#contact">Contact Me</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skillsect section -->
+            <section
+                id="skill"
+                class="mx-auto lg:grid grid-cols-2 gap-1 lg:px-20 py-20 px-2">
+                <div>
+                    <h2 class="text-4xl font-bold mt-8 mb-8 text-center">
+                        <span class="text-primary">My</span> Skillset
+                    </h2>
+                    <img src="img/skillset.jpg" class="" alt="skill set" />
+                </div>
+
+                <ul class="timeline timeline-vertical">
+                    <li>
+                        <div class="timeline-start timeline-box">
+                            AutoCAD | Civil 3D | Orion | Protastructure |
+                            Staadpro | Etabs | Abaqus
+                        </div>
+                        <hr />
+                    </li>
+                    <li>
+                        <hr />
+                        <div class="timeline-end timeline-box">
+                            HTML | Vanilla css | Tailwind css | Bootstrap |
+                            Vanilla JS | Jquery | NODEJS | Express | Wordpress |
+                            GIT
+                        </div>
+                        <hr />
+                    </li>
+                    <li>
+                        <hr />
+                        <div class="timeline-start timeline-box">
+                            Figma | Whimsical | Photopea | Canva ClipChamp |
+                            Camtasia | Adobe XD | Photoshop | Moodle
+                        </div>
+                        <hr />
+                    </li>
+                    <li>
+                        <hr />
+                        <div class="timeline-end timeline-box">
+                            Data Analysis | SPSS | NVivo
+                        </div>
+                        <hr />
+                    </li>
+                    <li>
+                        <hr />
+                        <div class="timeline-start timeline-box">
+                            Agile Project Management | Product Management | Zoom
+                            | Google Meet | Microsoft Team
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- My Works section -->
+            <section id="work" class="px-2 lg:px-20">
+                <h2 class="text-center text-4xl font-bold mb-8">
+                    My <span class="text-primary">Works</span>
+                </h2>
+
+                <div class="lg:grid grid-cols-4 gap-2">
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark m-2">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat"
+                            data-twe-ripple-init
+                            data-twe-ripple-color="light">
+                            <img
+                                class="rounded-t-lg"
+                                src="img/structural design.png"
+                                alt="structural design" />
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                            </a>
+                        </div>
+                        <div class="p-6 text-surface dark:text-white">
+                            <a
+                                class="bg-texture p-1 mx-auto rounded-full text-xs text-white font-bold"
+                                href="#"
+                                >Engineering</a
+                            >
+                            <p class="my-4 text-base">
+                                <span class="font-bold">Project:</span>
+                                Complete Structural Design of Public Office
+                                Development - RC and Steel Structures
+                            </p>
+                            <button
+                                type="button"
+                                class="inline-block rounded bg-primary px-6 .5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                                data-twe-ripple-init
+                                data-twe-ripple-color="light">
+                                <a href="#">Approved for Construction</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark m-2">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat"
+                            data-twe-ripple-init
+                            data-twe-ripple-color="light">
+                            <img
+                                class="rounded-t-lg"
+                                src="img/International Conference.png"
+                                alt="" />
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                            </a>
+                        </div>
+                        <div class="p-6 text-surface dark:text-white">
+                            <a
+                                class="bg-texture p-1 mx-auto rounded-full text-xs text-white font-bold"
+                                href="#"
+                                >Engineering</a
+                            >
+                            <p class="my-4 text-base">
+                                <span class="font-bold">Project:</span>
+                                Research Paper on Cultural Sustainability in
+                                Resettlement: Assessing PET Blocks for
+                                Eco-friendly Rehabilitation Infrastructure in
+                                Nigeria.
+                            </p>
+                            <button
+                                type="button"
+                                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                                data-twe-ripple-init
+                                data-twe-ripple-color="light">
+                                <a href="#">Accepted for Publication</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark m-2">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat"
+                            data-twe-ripple-init
+                            data-twe-ripple-color="light">
+                            <img
+                                class="rounded-t-lg"
+                                src="img/engineering.png"
+                                alt="" />
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                            </a>
+                        </div>
+                        <div class="p-6 text-surface dark:text-white">
+                            <a
+                                class="bg-texture p-1 mx-auto rounded-full text-xs text-white font-bold"
+                                href="#"
+                                >Engineering</a
+                            >
+                            <p class="my-4 text-base">
+                                <span class="font-bold">Project:</span>
+                                Analysis and Design of Mini-Indoor Recreation
+                                Complex
+                            </p>
+                            <button
+                                type="button"
+                                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                                data-twe-ripple-init
+                                data-twe-ripple-color="light">
+                                <a href="http://bit.ly/482eiXR"
+                                    >Read Publication Here</a
+                                >
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark m-2">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat"
+                            data-twe-ripple-init
+                            data-twe-ripple-color="light">
+                            <img
+                                class="rounded-t-lg"
+                                src="img/lecture.jpg"
+                                alt="" />
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                            </a>
+                        </div>
+                        <div class="p-6 text-surface dark:text-white">
+                            <a
+                                class="bg-secondary p-1 mx-auto rounded-full text-xs text-white font-bold"
+                                href="#"
+                                >Human Development</a
+                            >
+                            <p class="my-4 text-base">
+                                <span class="font-bold">Activity:</span>
+                                Teaching Assistant for Design Studio Undergrad
+                                Program at the prestigious University of Abuja,
+                                Nigeria.
+                            </p>
+                            <button
+                                type="button"
+                                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                                data-twe-ripple-init
+                                data-twe-ripple-color="light">
+                                <a
+                                    href="https://www.linkedin.com/posts/adeoyevictor_africa-sustainability-globalleadership-activity-7178357842846879744-koV_?utm_source=share&utm_medium=member_desktop"
+                                    >Watch Clip</a
+                                >
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark m-2">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat"
+                            data-twe-ripple-init
+                            data-twe-ripple-color="light">
+                            <img
+                                class="rounded-t-lg"
+                                src="img/MILLs_89.jpg"
+                                alt="" />
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                            </a>
+                        </div>
+                        <div class="p-6 text-surface dark:text-white">
+                            <a
+                                class="bg-secondary p-1 mx-auto rounded-full text-xs text-white font-bold"
+                                href="#"
+                                >Human Development</a
+                            >
+                            <p class="my-4 text-base">
+                                <span class="font-bold">Activity:</span>
+                                Technical Training Session on Essential
+                                Fact-checking Technologies to combat
+                                misinformation and fake news with Librarians and
+                                Information Professionals Hosted by Nigeria
+                                Library Association March 2024.
+                            </p>
+                            <button
+                                type="button"
+                                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                                data-twe-ripple-init
+                                data-twe-ripple-color="light">
+                                <a href="#">Live Session</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark m-2">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat"
+                            data-twe-ripple-init
+                            data-twe-ripple-color="light">
+                            <img
+                                class="rounded-t-lg"
+                                src="img/idp3.png"
+                                alt="" />
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                            </a>
+                        </div>
+                        <div class="p-6 text-surface dark:text-white">
+                            <a
+                                class="bg-green p-1 mx-auto rounded-full text-xs text-white font-bold"
+                                href="#"
+                                >Social Work</a
+                            >
+                            <p class="my-4 text-base">
+                                <span class="font-bold">Activity:</span>
+                                HOPE Project - Social Outreach to the Internally
+                                Displaced Person IDP Community
+                            </p>
+                            <button
+                                type="button"
+                                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                                data-twe-ripple-init
+                                data-twe-ripple-color="light">
+                                <a
+                                    href="https://www.linkedin.com/posts/adeoyevictor_viconglobal-communitydevelopement-activity-7088931326992486400-6FLM?utm_source=share&utm_medium=member_desktop"
+                                    >Project Record</a
+                                >
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark m-2">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat"
+                            data-twe-ripple-init
+                            data-twe-ripple-color="light">
+                            <img
+                                class="rounded-t-lg"
+                                src="img/orphanage.jpg"
+                                alt="" />
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                            </a>
+                        </div>
+                        <div class="p-6 text-surface dark:text-white">
+                            <a
+                                class="bg-green p-1 mx-auto rounded-full text-xs text-white font-bold"
+                                href="#"
+                                >Social Work</a
+                            >
+                            <p class="my-4 text-base">
+                                <span class="font-bold">Activity:</span>
+                                REACH Project - Social Outreach to the Orphanage
+                                Homes in Abuja and Nasarawa, Nigeria
+                            </p>
+                            <button
+                                type="button"
+                                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                                data-twe-ripple-init
+                                data-twe-ripple-color="light">
+                                <a
+                                    href="https://www.linkedin.com/posts/adeoyevictor_viscodinafrica-sustainability-communitydevelopment-activity-7167841850056282113-9NMt?utm_source=share&utm_medium=member_desktop"
+                                    >Project Record</a
+                                >
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark m-2">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat"
+                            data-twe-ripple-init
+                            data-twe-ripple-color="light">
+                            <img
+                                class="rounded-t-lg"
+                                src="img/milfy.png"
+                                alt="" />
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                            </a>
+                        </div>
+                        <div class="p-6 text-surface dark:text-white">
+                            <a
+                                class="bg-gray p-1 mx-auto rounded-full text-xs text-white font-bold"
+                                href="#"
+                                >Information Technology</a
+                            >
+                            <p class="my-4 text-base">
+                                <span class="font-bold">Project:</span>
+                                Product Design of Digital Web Application with
+                                AI Intergration to Promote Media and Information
+                                Literacy and Combat the Spread of Misinformation
+                                - UNESCO Global Media & Information Literacy
+                                Hackathon 2023
+                            </p>
+                            <button
+                                type="button"
+                                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                                data-twe-ripple-init
+                                data-twe-ripple-color="light">
+                                <a
+                                    href="https://www.figma.com/proto/YRR1uVfbJuv84BMtcJYAOz/UNESCO-HACKATHON?node-id=653-2011&starting-point-node-id=653%3A2011&scaling=scale-down"
+                                    >Access Prototype Here</a
+                                >
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark m-2">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat"
+                            data-twe-ripple-init
+                            data-twe-ripple-color="light">
+                            <img
+                                class="rounded-t-lg"
+                                src="img/abaqus.png"
+                                alt="" />
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                            </a>
+                        </div>
+                        <div class="p-6 text-surface dark:text-white">
+                            <a
+                                class="bg-texture p-1 mx-auto rounded-full text-xs text-white font-bold"
+                                href="#"
+                                >Engineering</a
+                            >
+                            <p class="my-4 text-base">
+                                <span class="font-bold">Activity:</span>
+                                Simulation of the behaviours of Stainless Steel
+                                Composite Beam - Abaqus Project
+                            </p>
+                            <button
+                                type="button"
+                                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                                data-twe-ripple-init
+                                data-twe-ripple-color="light">
+                                <a href="#"> Exclusive for a Client</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark m-2">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat"
+                            data-twe-ripple-init
+                            data-twe-ripple-color="light">
+                            <img
+                                class="rounded-t-lg"
+                                src="img/site.jpg"
+                                alt="" />
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                            </a>
+                        </div>
+                        <div class="p-6 text-surface dark:text-white">
+                            <a
+                                class="bg-texture p-1 mx-auto rounded-full text-xs text-white font-bold"
+                                href="#"
+                                >Engineering</a
+                            >
+                            <p class="my-4 text-base">
+                                <span class="font-bold">Activity:</span>
+                                Periodical Supervision of Construction Works -
+                                Checks for Compliances to Approved Structural
+                                Designs
+                            </p>
+                            <button
+                                type="button"
+                                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                                data-twe-ripple-init
+                                data-twe-ripple-color="light">
+                                <a href="#"> Exclusive Project</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark m-2">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat"
+                            data-twe-ripple-init
+                            data-twe-ripple-color="light">
+                            <img
+                                class="rounded-t-lg"
+                                src="img/bds.png"
+                                alt="" />
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                            </a>
+                        </div>
+                        <div class="p-6 text-surface dark:text-white">
+                            <a
+                                class="bg-gray p-1 mx-auto rounded-full text-xs text-white font-bold"
+                                href="#"
+                                >Information Technology</a
+                            >
+                            <p class="my-4 text-base">
+                                <span class="font-bold">Project:</span>
+                                Development of Brain Digital Solution - Tech
+                                Company Website
+                            </p>
+                            <button
+                                type="button"
+                                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                                data-twe-ripple-init
+                                data-twe-ripple-color="light">
+                                <a href="https://brainsolutionsagency.com.ng/"
+                                    >Access Project Here</a
+                                >
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark m-2">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat"
+                            data-twe-ripple-init
+                            data-twe-ripple-color="light">
+                            <img
+                                class="rounded-t-lg"
+                                src="img/project1.png"
+                                alt="" />
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                            </a>
+                        </div>
+                        <div class="p-6 text-surface dark:text-white">
+                            <a
+                                class="bg-gray p-1 mx-auto rounded-full text-xs text-black font-bold"
+                                href="#"
+                                >Information Technology</a
+                            >
+                            <p class="my-4 text-base">
+                                <span class="font-bold">Project:</span>
+                                Development of an Hotel Booking Website
+                            </p>
+                            <button
+                                type="button"
+                                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                                data-twe-ripple-init
+                                data-twe-ripple-color="light">
+                                <a href="https://grand-city-hotel.vercel.app/"
+                                    >ACCESS HERE</a
+                                >
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark m-2">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat"
+                            data-twe-ripple-init
+                            data-twe-ripple-color="light">
+                            <img
+                                class="rounded-t-lg"
+                                src="img/project2.png"
+                                alt="" />
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                            </a>
+                        </div>
+                        <div class="p-6 text-surface dark:text-white">
+                            <a
+                                class="bg-gray p-1 mx-auto rounded-full text-xs text-black font-bold"
+                                href="#"
+                                >Information Technology</a
+                            >
+                            <p class="my-4 text-base">
+                                <span class="font-bold">Project:</span>
+                                Development of a Newsblog Website
+                            </p>
+                            <button
+                                type="button"
+                                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                                data-twe-ripple-init
+                                data-twe-ripple-color="light">
+                                <a href="https://newscorner.vercel.app/"
+                                    >ACCESS HERE</a
+                                >
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark m-2">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat"
+                            data-twe-ripple-init
+                            data-twe-ripple-color="light">
+                            <img
+                                class="rounded-t-lg"
+                                src="img/project3.png"
+                                alt="" />
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                            </a>
+                        </div>
+                        <div class="p-6 text-surface dark:text-white">
+                            <a
+                                class="bg-gray p-1 mx-auto rounded-full text-xs text-black font-bold"
+                                href="#"
+                                >Information Technology</a
+                            >
+                            <p class="my-4 text-base">
+                                <span class="font-bold">Project:</span>
+                                Redesign of Bratim Business School Website
+                            </p>
+                            <button
+                                type="button"
+                                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                                data-twe-ripple-init
+                                data-twe-ripple-color="light">
+                                <a href="https://bratim.com/">ACCESS HERE</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark m-2">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat"
+                            data-twe-ripple-init
+                            data-twe-ripple-color="light">
+                            <img
+                                class="rounded-t-lg"
+                                src="img/project5.png"
+                                alt="" />
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                            </a>
+                        </div>
+                        <div class="p-6 text-surface dark:text-white">
+                            <a
+                                class="bg-secondary p-1 mx-auto rounded-full text-xs text-white font-bold"
+                                href="#"
+                                >Human Development</a
+                            >
+                            <p class="my-4 text-base">
+                                <span class="font-bold">Activity:</span>
+                                Frontend development Training Facilitation at
+                                Bratim Business School, Abuja.
+                            </p>
+                            <button
+                                type="button"
+                                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                                data-twe-ripple-init
+                                data-twe-ripple-color="light">
+                                <a
+                                    href="https://www.linkedin.com/posts/adeoyevictor_its-overwhelming-but-its-worth-the-pains-activity-7087122737315348481-AUOY?utm_source=share&utm_medium=member_desktop"
+                                    >ACTIVITY RECORD</a
+                                >
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark m-2">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat"
+                            data-twe-ripple-init
+                            data-twe-ripple-color="light">
+                            <img
+                                class="rounded-t-lg"
+                                src="img/project6.png"
+                                alt="" />
+                            <a href="#!">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                            </a>
+                        </div>
+                        <div class="p-6 text-surface dark:text-white">
+                            <a
+                                class="bg-secondary p-1 mx-auto rounded-full text-xs text-white font-bold"
+                                href="#"
+                                >Human Development</a
+                            >
+                            <p class="my-4 text-base">
+                                <span class="font-bold">Activity:</span>
+                                Media and Information Literacy Technical
+                                Training Session at Nasarawa State University,
+                                Keffi.
+                            </p>
+                            <button
+                                type="button"
+                                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                                data-twe-ripple-init
+                                data-twe-ripple-color="light">
+                                <a
+                                    href="https://www.linkedin.com/posts/adeoyevictor_mediaandinfomartionliteracy-digitaltools-activity-7085193690591215616-UyhZ?utm_source=share&utm_medium=member_desktop"
+                                    >PROJCET RECORD</a
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Viblog Section -->
+            <section id="viblog" class="my-20 lg:px-20">
+                <h2 class="text-4xl font-bold mt-8 mb-8 text-center">
+                    <span class="text-primary">Vi</span>blog
+                </h2>
+
+                <div class="lg:grid grid-cols-2 gap-2 m-2">
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat">
+                            <iframe
+                                src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7178357743584481280?compact=1"
+                                height="350"
+                                width="100%"
+                                frameborder="0"
+                                allowfullscreen=""
+                                title="Embedded post"></iframe>
+                        </div>
+                        <div class="p-6">
+                            <h5 class="mb-2 text-xl font-medium leading-tight">
+                                Africa Talents
+                            </h5>
+                            <p class="mb-4 text-base">
+                                There is not better time than now. The greatness
+                                we desire in Africa, begin with us.
+                            </p>
+                            <p
+                                class="text-base text-surface/75 dark:text-neutral-300">
+                                <small
+                                    ><a
+                                        href="https://www.linkedin.com/posts/adeoyevictor_africa-sustainability-globalleadership-activity-7178357842846879744-koV_?utm_source=share&utm_medium=member_desktop"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Post on Linkedin</a
+                                    ></small
+                                >
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
+                        <div class="p-6">
+                            <h5 class="mb-2 text-xl font-medium leading-tight">
+                                Engineering Education
+                            </h5>
+                            <p class="mb-4 text-base">
+                                Professionalism does not end in practice, it
+                                makes more impact when channeled to academic.
+                            </p>
+                            <p
+                                class="text-base text-surface/75 dark:text-neutral-300">
+                                <small
+                                    ><a
+                                        href="https://www.linkedin.com/posts/adeoyevictor_universityofabuja-civilengineering-sustainableinfrastructure-activity-7169285247900004352-4A_1?utm_source=share&utm_medium=member_desktop"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Post on Linkedin</a
+                                    ></small
+                                >
+                            </p>
+                        </div>
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat">
+                            <iframe
+                                src="https://www.linkedin.com/embed/feed/update/urn:li:share:7169285244959883264"
+                                height="350"
+                                width="100%"
+                                frameborder="0"
+                                allowfullscreen=""
+                                title="Embedded post"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:grid grid-cols-3 gap-2 m-2">
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat">
+                            <img
+                                class="rounded-t-lg"
+                                src="https://tecdn.b-cdn.net/img/new/slides/041.webp"
+                                alt="" />
+                        </div>
+                        <div class="p-6">
+                            <h5 class="mb-2 text-xl font-medium leading-tight">
+                                Peace Within
+                            </h5>
+                            <p class="mb-4 text-base">
+                                In the midst of life's chaos, we often find
+                                ourselves caught between conflicting desires.
+                            </p>
+                            <p
+                                class="text-base text-surface/75 dark:text-neutral-300">
+                                <small
+                                    ><a
+                                        href="https://www.linkedin.com/posts/adeoyevictor_success-growth-career-activity-7081984034318237696-5ssu?utm_source=share&utm_medium=member_desktop"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Read more</a
+                                    ></small
+                                >
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
+                        <div class="p-6">
+                            <h5 class="mb-2 text-xl font-medium leading-tight">
+                                Train-the-Trainer: An experience from the US
+                                Training
+                            </h5>
+                            <p class="mb-4 text-base">
+                                Professionalism does not end in practice, it
+                                makes more impact when channeled to academic.
+                            </p>
+                            <p
+                                class="text-base text-surface/75 dark:text-neutral-300">
+                                <small
+                                    ><a
+                                        href="https://www.linkedin.com/posts/adeoyevictor_future-career-success-activity-7056905671786598400-Oghx?utm_source=share&utm_medium=member_desktop"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Post on Linkedin</a
+                                    ></small
+                                >
+                            </p>
+                        </div>
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat">
+                            <img
+                                class="rounded-t-lg"
+                                src="img/victor.jpg"
+                                alt="" />
+                        </div>
+                    </div>
+
+                    <div
+                        class="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark dark:text-white text-surface">
+                        <div
+                            class="relative overflow-hidden bg-cover bg-no-repeat">
+                            <img
+                                class="rounded-t-lg"
+                                src="img/blog3.png"
+                                alt="" />
+                        </div>
+                        <div class="p-6">
+                            <h5 class="mb-2 text-xl font-medium leading-tight">
+                                Leadership
+                            </h5>
+                            <p class="mb-4 text-base">
+                                TIIDELab Fellowship cohort 5, week 5 Leadership
+                                Episode
+                            </p>
+                            <p
+                                class="text-base text-surface/75 dark:text-neutral-300">
+                                <small>
+                                    <a
+                                        href="https://www.linkedin.com/posts/adeoyevictor_this-is-a-huge-opportunity-to-lead-the-whole-activity-7089848033915338753-nUQQ?utm_source=share&utm_medium=member_desktop"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Read more</a
+                                    ></small
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Form -->
+            <section
+                id="contact"
+                class="bg-[url('img/contact.png')] bg-cover bg-no-repeat bg-center mx-2 my-4">
+                <h2 class="text-4xl font-bold mt-8 mb-8 text-center">
+                    <span class="text-primary">I am</span> here
+                </h2>
+                <p class="text-center">I am eager to hear from you.</p>
+
+                <form
+                    action="https://formspree.io/f/mqkrygvp"
+                    method="POST"
+                    enctype="multipart/form-data"
+                    class="flex flex-col justify-center items-center">
+                    <label class="form-control w-full max-w-xs my-3">
+                        <div class="label">
+                            <span class="label-text">First Name</span>
+                        </div>
+                        <input
+                            type="text"
+                            name="firstName"
+                            id="firstName"
+                            placeholder="Enter your first name"
+                            class="bg-gray input input-bordered w-full max-w-xs"
+                            required />
+                    </label>
+                    <label class="form-control w-full max-w-xs my-3">
+                        <div class="label">
+                            <span class="label-text">Last Name</span>
+                        </div>
+                        <input
+                            type="text"
+                            name="lastName"
+                            id="lastName"
+                            placeholder="Enter your last name"
+                            class="bg-gray input input-bordered w-full max-w-xs"
+                            required />
+                    </label>
+                    <label
+                        class="form-control w-full max-w-xs my-3"
+                        for="email">
+                        <div class="label">
+                            <span class="label-text">Email</span>
+                        </div>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            class="bg-gray input input-bordered w-full max-w-xs"
+                            required />
+                    </label>
+
+                    <label class="form-control w-full max-w-xs my-3">
+                        <div class="label">
+                            <span class="label-text">Message</span>
+                        </div>
+                        <textarea
+                            class="bg-gray input input-bordered w-full max-w-xs"
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="10"
+                            placeholder="Enter your message"
+                            required></textarea>
+                    </label>
+                    <button
+                        type="submit"
+                        class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                        data-twe-ripple-init
+                        data-twe-ripple-color="light">
+                        Submit
+                    </button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-primary py-10 h-[470px]" id="footer">
+            <!-- NavBar -->
+            <div class="navbar lg:px-20">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div
+                            tabindex="0"
+                            role="button"
+                            class="btn btn-ghost lg:hidden">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5 text-white"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul
+                            tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li class="p-3 hover:text-gray">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a href="#about">Meet Me</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a href="#service">My Services</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a href="#skill">My Skills</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a href="#work">Works</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a href="#viblog">Viblog</a>
+                            </li>
+                            <li class="p-3 hover:text-gray">
+                                <a
+                                    href="http://www.youtube.com/@_officialvic"
+                                    target="_blank"
+                                    >ViVlog</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl text-white">viKtor</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="p-3 hover:text-gray">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="p-3 hover:text-gray">
+                            <a href="#about">Meet Me</a>
+                        </li>
+                        <li class="p-3 hover:text-gray">
+                            <a href="#service">My Services</a>
+                        </li>
+                        <li class="p-3 hover:text-gray">
+                            <a href="#skill">My Skills</a>
+                        </li>
+                        <li class="p-3 hover:text-gray">
+                            <a href="#work">Works</a>
+                        </li>
+                        <li class="p-3 hover:text-gray">
+                            <a href="#viblog">Viblog</a>
+                        </li>
+                        <li class="p-3 hover:text-gray">
+                            <a
+                                href="http://www.youtube.com/@_officialvic"
+                                target="_blank"
+                                >ViVlog</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a
+                        href="#contact"
+                        class="btn bg-gradient-to-r from-primary to-secondary border-none ring-2 ring-blue-500/50 p-4 text-white"
+                        >Let's Talk</a
+                    >
+                </div>
+            </div>
+            <div class="flex flex-col mt-36">
+                <div class="text-center my-4">
+                    <a
+                        href="https://github.com/Officialvic"
+                        class="text-white p-2"
+                        ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/adeoyevictor/"
+                        class="text-white p-2"
+                        ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                    <a
+                        href="https://twitter.com/AdeoyeOnaopemi3?t=zpQa8S6VqWGZ-7RfORJv1g&s=09"
+                        class="text-white p-2"
+                        ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                    <a
+                        href="https://medium.com/@onaopeadeoye"
+                        class="text-white p-2"
+                        ><i class="fa-brands fa-medium"></i
+                    ></a>
+                </div>
+                <div>
+                    <p
+                        class="font-light text-center text-base text-action my-4 lg:flex justify-center gap-2">
+                        <span>+ 234(0)8169921855 </span><br />
+                        <span>onaopeadeoye@gmail.com </span><br />
+                        <span>Abuja Nigeria</span><br />
+                    </p>
+                    <p class="text-center text-light font-light text-base mt-8">
+                        &copy;copyright 2023 All Right Reserved
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script src="main.js"></script>
+        <script
+            type="text/javascript"
+            src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    </body>
+</html>

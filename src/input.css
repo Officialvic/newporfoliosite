@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+    place-items: start;
+}
+
+.hero > * {
+    grid-row-start: 2;
+}
+
+.hero-overlay {
+    grid-row-start: 2;
+    height: 100%;
+    width: 100%;
+}
+
+.timeline-box {
+    border: none;
+    background-color: #2f6410;
+    color: #fff;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
